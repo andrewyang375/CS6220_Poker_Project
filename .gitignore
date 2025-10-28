@@ -22,3 +22,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# i dont think we need to worry about .envs for this so whatever
+
+#.env
+#.env.*
