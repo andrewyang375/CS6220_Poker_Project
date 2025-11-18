@@ -25,5 +25,10 @@ dist-ssr
 
 # i dont think we need to worry about .envs for this so whatever
 
-#.env
-#.env.*
+.env
+.env.*
+**/site-packages/
+**/.venv/
+**/venv/
+**/.env/
+**/env/
