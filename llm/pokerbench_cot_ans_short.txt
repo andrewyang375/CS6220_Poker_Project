@@ -1,0 +1,785 @@
+
+
+You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips and the big blind is 1 chips. Everyone started with 100 chips.
+The player positions involved in this game are UTG, HJ, CO, BTN, SB, BB.
+In this hand, your position is BTN, and your holding is [Nine of Club and Eight of Club].
+Before the flop, BTN raise 2.5 chips, and BB call. Assume that all other players that is not mentioned folded.
+The flop comes Nine Of Diamond, Ten Of Spade, and Eight Of Spade, then BB check, and BTN check.
+The turn comes Five Of Diamond, then BB bet 6 chips, BTN raise 17 chips, and BB call.
+The river comes Two Of Diamond, then BB check.
+
+
+Now it is your turn to make a move.
+To remind you, the current pot size is 39.0 chips, and your holding is [Nine of Club and Eight of Club].
+
+Your optimal action is: check
+
+Explain your reasoning step by step. Format your answer in this structure:
+1. Stage: <Preflop / Flop / Turn / River>
+2. Known info: <board cards, hero hand, stack sizes, position>
+3. Opponent range estimate: <brief logic>
+4. Pot odds and equity estimate: <numbers or qualitative>
+5. Action reasoning: <why fold / call / raise>
+6. Final decision: <FOLD / CHECK / CALL / BET X / RAISE X / ALL IN>
+----------------------------------------
+
+
+You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips and the big blind is 1 chips. Everyone started with 100 chips.
+The player positions involved in this game are UTG, HJ, CO, BTN, SB, BB.
+In this hand, your position is BTN, and your holding is [Queen of Diamond and Ten of Spade].
+Before the flop, BTN raise 2.5 chips, and BB call. Assume that all other players that is not mentioned folded.
+The flop comes Ten Of Heart, Four Of Club, and Five Of Diamond, then BB check, and BTN check.
+The turn comes King Of Diamond, then BB check, BTN bet 6 chips, and BB call.
+The river comes Queen Of Heart, then BB bet 9 chips.
+
+
+Now it is your turn to make a move.
+To remind you, the current pot size is 26.0 chips, and your holding is [Queen of Diamond and Ten of Spade].
+
+Your optimal action is: call
+
+Explain your reasoning step by step. Format your answer in this structure:
+1. Stage: <Preflop / Flop / Turn / River>
+2. Known info: <board cards, hero hand, stack sizes, position>
+3. Opponent range estimate: <brief logic>
+4. Pot odds and equity estimate: <numbers or qualitative>
+5. Action reasoning: <why fold / call / raise>
+6. Final decision: <FOLD / CHECK / CALL / BET X / RAISE X / ALL IN>
+----------------------------------------
+
+
+You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips and the big blind is 1 chips. Everyone started with 100 chips.
+The player positions involved in this game are UTG, HJ, CO, BTN, SB, BB.
+In this hand, your position is BB, and your holding is [Ace of Club and Ten of Club].
+Before the flop, SB raise 3.0 chips, and BB call. Assume that all other players that is not mentioned folded.
+The flop comes Jack Of Spade, King Of Spade, and Five Of Diamond, then SB check, and BB check.
+The turn comes Eight Of Heart, then SB check, BB bet 5 chips, SB raise 16 chips, and BB call.
+The river comes Five Of Club, then SB check.
+
+
+Now it is your turn to make a move.
+To remind you, the current pot size is 38.0 chips, and your holding is [Ace of Club and Ten of Club].
+
+Your optimal action is: check
+
+Explain your reasoning step by step. Format your answer in this structure:
+1. Stage: <Preflop / Flop / Turn / River>
+2. Known info: <board cards, hero hand, stack sizes, position>
+3. Opponent range estimate: <brief logic>
+4. Pot odds and equity estimate: <numbers or qualitative>
+5. Action reasoning: <why fold / call / raise>
+6. Final decision: <FOLD / CHECK / CALL / BET X / RAISE X / ALL IN>
+----------------------------------------
+
+
+You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips and the big blind is 1 chips. Everyone started with 100 chips.
+The player positions involved in this game are UTG, HJ, CO, BTN, SB, BB.
+In this hand, your position is CO, and your holding is [Ace of Spade and Five of Spade].
+Before the flop, CO raise 2.3 chips, and BB call. Assume that all other players that is not mentioned folded.
+The flop comes Six Of Spade, Eight Of Diamond, and Seven Of Club, then BB check, CO bet 2 chips, BB raise 8 chips, and CO call.
+The turn comes Jack Of Spade, then BB bet 16 chips.
+
+
+Now it is your turn to make a move.
+To remind you, the current pot size is 37.0 chips, and your holding is [Ace of Spade and Five of Spade].
+
+Your optimal action is: call
+
+Explain your reasoning step by step. Format your answer in this structure:
+1. Stage: <Preflop / Flop / Turn / River>
+2. Known info: <board cards, hero hand, stack sizes, position>
+3. Opponent range estimate: <brief logic>
+4. Pot odds and equity estimate: <numbers or qualitative>
+5. Action reasoning: <why fold / call / raise>
+6. Final decision: <FOLD / CHECK / CALL / BET X / RAISE X / ALL IN>
+----------------------------------------
+
+
+You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips and the big blind is 1 chips. Everyone started with 100 chips.
+The player positions involved in this game are UTG, HJ, CO, BTN, SB, BB.
+In this hand, your position is BB, and your holding is [Ace of Spade and Four of Diamond].
+Before the flop, SB raise 3.0 chips, and BB call. Assume that all other players that is not mentioned folded.
+The flop comes Jack Of Spade, King Of Spade, and Five Of Diamond, then SB check, and BB check.
+The turn comes Eight Of Heart, then SB bet 5 chips, BB raise 16 chips, and SB call.
+The river comes Three Of Club, then SB check.
+
+
+Now it is your turn to make a move.
+To remind you, the current pot size is 38.0 chips, and your holding is [Ace of Spade and Four of Diamond].
+
+Your optimal action is: check
+
+Explain your reasoning step by step. Format your answer in this structure:
+1. Stage: <Preflop / Flop / Turn / River>
+2. Known info: <board cards, hero hand, stack sizes, position>
+3. Opponent range estimate: <brief logic>
+4. Pot odds and equity estimate: <numbers or qualitative>
+5. Action reasoning: <why fold / call / raise>
+6. Final decision: <FOLD / CHECK / CALL / BET X / RAISE X / ALL IN>
+----------------------------------------
+
+
+You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips and the big blind is 1 chips. Everyone started with 100 chips.
+The player positions involved in this game are UTG, HJ, CO, BTN, SB, BB.
+In this hand, your position is CO, and your holding is [Jack of Spade and Eight of Spade].
+Before the flop, CO raise 2.3 chips, and BB call. Assume that all other players that is not mentioned folded.
+The flop comes King Of Spade, Seven Of Heart, and Two Of Diamond, then BB check, and CO check.
+The turn comes Six Of Heart, then BB check, CO bet 4 chips, and BB raise 13 chips.
+
+
+Now it is your turn to make a move.
+To remind you, the current pot size is 22.0 chips, and your holding is [Jack of Spade and Eight of Spade].
+
+Your optimal action is: fold
+
+Explain your reasoning step by step. Format your answer in this structure:
+1. Stage: <Preflop / Flop / Turn / River>
+2. Known info: <board cards, hero hand, stack sizes, position>
+3. Opponent range estimate: <brief logic>
+4. Pot odds and equity estimate: <numbers or qualitative>
+5. Action reasoning: <why fold / call / raise>
+6. Final decision: <FOLD / CHECK / CALL / BET X / RAISE X / ALL IN>
+----------------------------------------
+
+
+You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips and the big blind is 1 chips. Everyone started with 100 chips.
+The player positions involved in this game are UTG, HJ, CO, BTN, SB, BB.
+In this hand, your position is BB, and your holding is [Seven of Heart and Seven of Club].
+Before the flop, BTN raise 2.5 chips, and BB call. Assume that all other players that is not mentioned folded.
+The flop comes Jack Of Spade, King Of Spade, and Five Of Diamond, then BB check, BTN bet 4 chips, and BB call.
+The turn comes Jack Of Diamond, then BB check, and BTN bet 10 chips.
+
+
+Now it is your turn to make a move.
+To remind you, the current pot size is 23.0 chips, and your holding is [Seven of Heart and Seven of Club].
+
+Your optimal action is: fold
+
+Explain your reasoning step by step. Format your answer in this structure:
+1. Stage: <Preflop / Flop / Turn / River>
+2. Known info: <board cards, hero hand, stack sizes, position>
+3. Opponent range estimate: <brief logic>
+4. Pot odds and equity estimate: <numbers or qualitative>
+5. Action reasoning: <why fold / call / raise>
+6. Final decision: <FOLD / CHECK / CALL / BET X / RAISE X / ALL IN>
+----------------------------------------
+
+
+You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips and the big blind is 1 chips. Everyone started with 100 chips.
+The player positions involved in this game are UTG, HJ, CO, BTN, SB, BB.
+In this hand, your position is BTN, and your holding is [King of Diamond and Ten of Heart].
+Before the flop, BTN raise 2.5 chips, and BB call. Assume that all other players that is not mentioned folded.
+The flop comes Ace Of Diamond, Eight Of Diamond, and Three Of Diamond, then BB check, and BTN check.
+The turn comes Nine Of Diamond, then BB check, and BTN check.
+The river comes Ten Of Diamond, then BB bet 3 chips.
+
+
+Now it is your turn to make a move.
+To remind you, the current pot size is 8.0 chips, and your holding is [King of Diamond and Ten of Heart].
+
+Your optimal action is: raise 10
+
+Explain your reasoning step by step. Format your answer in this structure:
+1. Stage: <Preflop / Flop / Turn / River>
+2. Known info: <board cards, hero hand, stack sizes, position>
+3. Opponent range estimate: <brief logic>
+4. Pot odds and equity estimate: <numbers or qualitative>
+5. Action reasoning: <why fold / call / raise>
+6. Final decision: <FOLD / CHECK / CALL / BET X / RAISE X / ALL IN>
+----------------------------------------
+
+
+You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips and the big blind is 1 chips. Everyone started with 100 chips.
+The player positions involved in this game are UTG, HJ, CO, BTN, SB, BB.
+In this hand, your position is BB, and your holding is [Four of Diamond and Four of Club].
+Before the flop, CO raise 2.3 chips, and BB call. Assume that all other players that is not mentioned folded.
+The flop comes Five Of Club, Two Of Diamond, and Three Of Heart, then BB check, and CO check.
+The turn comes Ace Of Diamond, then BB bet 6 chips, and CO call.
+The river comes Ten Of Diamond, then BB check, and CO bet 13 chips.
+
+
+Now it is your turn to make a move.
+To remind you, the current pot size is 30.0 chips, and your holding is [Four of Diamond and Four of Club].
+
+Your optimal action is: call
+
+Explain your reasoning step by step. Format your answer in this structure:
+1. Stage: <Preflop / Flop / Turn / River>
+2. Known info: <board cards, hero hand, stack sizes, position>
+3. Opponent range estimate: <brief logic>
+4. Pot odds and equity estimate: <numbers or qualitative>
+5. Action reasoning: <why fold / call / raise>
+6. Final decision: <FOLD / CHECK / CALL / BET X / RAISE X / ALL IN>
+----------------------------------------
+
+
+You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips and the big blind is 1 chips. Everyone started with 100 chips.
+The player positions involved in this game are UTG, HJ, CO, BTN, SB, BB.
+In this hand, your position is HJ, and your holding is [King of Diamond and Jack of Diamond].
+Before the flop, HJ raise 2.0 chips, and BTN call. Assume that all other players that is not mentioned folded.
+The flop comes Ace Of Diamond, Nine Of Heart, and Eight Of Heart, then HJ check, BTN bet 4 chips, and HJ call.
+The turn comes Three Of Spade, then HJ check, and BTN check.
+The river comes Two Of Heart, then HJ check, and BTN bet 10 chips.
+
+
+Now it is your turn to make a move.
+To remind you, the current pot size is 23.0 chips, and your holding is [King of Diamond and Jack of Diamond].
+
+Your optimal action is: fold
+
+Explain your reasoning step by step. Format your answer in this structure:
+1. Stage: <Preflop / Flop / Turn / River>
+2. Known info: <board cards, hero hand, stack sizes, position>
+3. Opponent range estimate: <brief logic>
+4. Pot odds and equity estimate: <numbers or qualitative>
+5. Action reasoning: <why fold / call / raise>
+6. Final decision: <FOLD / CHECK / CALL / BET X / RAISE X / ALL IN>
+----------------------------------------
+
+
+You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips and the big blind is 1 chips. Everyone started with 100 chips.
+The player positions involved in this game are UTG, HJ, CO, BTN, SB, BB.
+In this hand, your position is SB, and your holding is [Ace of Club and King of Heart].
+Before the flop, UTG raise 2.0, BTN call, SB call, BB raise 14.0, UTG fold, and BTN call. Assume that all other players that is not mentioned folded.
+
+Now it is your turn to make a move.
+To remind you, the current pot size is 32.0 chips, and your holding is [Ace of Club and King of Heart].
+
+Your optimal action is: fold
+
+Explain your reasoning step by step. Format your answer in this structure:
+1. Stage: <Preflop / Flop / Turn / River>
+2. Known info: <board cards, hero hand, stack sizes, position>
+3. Opponent range estimate: <brief logic>
+4. Pot odds and equity estimate: <numbers or qualitative>
+5. Action reasoning: <why fold / call / raise>
+6. Final decision: <FOLD / CHECK / CALL / BET X / RAISE X / ALL IN>
+----------------------------------------
+
+
+You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips and the big blind is 1 chips. Everyone started with 100 chips.
+The player positions involved in this game are UTG, HJ, CO, BTN, SB, BB.
+In this hand, your position is BB, and your holding is [Ace of Spade and Eight of Heart].
+Before the flop, SB raise 3.0 chips, and BB call. Assume that all other players that is not mentioned folded.
+The flop comes Ace Of Diamond, Eight Of Diamond, and Three Of Diamond, then SB check, and BB check.
+The turn comes King Of Heart, then SB check, BB bet 5 chips, SB raise 16 chips, and BB call.
+The river comes Jack Of Club, then SB check.
+
+
+Now it is your turn to make a move.
+To remind you, the current pot size is 38.0 chips, and your holding is [Ace of Spade and Eight of Heart].
+
+Your optimal action is: check
+
+Explain your reasoning step by step. Format your answer in this structure:
+1. Stage: <Preflop / Flop / Turn / River>
+2. Known info: <board cards, hero hand, stack sizes, position>
+3. Opponent range estimate: <brief logic>
+4. Pot odds and equity estimate: <numbers or qualitative>
+5. Action reasoning: <why fold / call / raise>
+6. Final decision: <FOLD / CHECK / CALL / BET X / RAISE X / ALL IN>
+----------------------------------------
+
+
+You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips and the big blind is 1 chips. Everyone started with 100 chips.
+The player positions involved in this game are UTG, HJ, CO, BTN, SB, BB.
+In this hand, your position is CO, and your holding is [Ace of Diamond and King of Spade].
+Before the flop, CO raise 2.3 chips, and BB call. Assume that all other players that is not mentioned folded.
+The flop comes Ten Of Heart, Three Of Spade, and Two Of Diamond, then BB check, and CO check.
+The turn comes Ace Of Club, then BB check, CO bet 6 chips, BB raise 17 chips, and CO call.
+The river comes Queen Of Club, then BB check, CO bet 29 chips, and BB raise 80 chips.
+
+
+Now it is your turn to make a move.
+To remind you, the current pot size is 148.0 chips, and your holding is [Ace of Diamond and King of Spade].
+
+Your optimal action is: fold
+
+Explain your reasoning step by step. Format your answer in this structure:
+1. Stage: <Preflop / Flop / Turn / River>
+2. Known info: <board cards, hero hand, stack sizes, position>
+3. Opponent range estimate: <brief logic>
+4. Pot odds and equity estimate: <numbers or qualitative>
+5. Action reasoning: <why fold / call / raise>
+6. Final decision: <FOLD / CHECK / CALL / BET X / RAISE X / ALL IN>
+----------------------------------------
+
+
+You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips and the big blind is 1 chips. Everyone started with 100 chips.
+The player positions involved in this game are UTG, HJ, CO, BTN, SB, BB.
+In this hand, your position is HJ, and your holding is [Jack of Heart and Jack of Diamond].
+Before the flop, HJ raise 2.0 chips, SB raise 11.0 chips, and HJ call. Assume that all other players that is not mentioned folded.
+The flop comes Four Of Spade, Four Of Heart, and Three Of Heart, then SB check, HJ bet 12 chips, and SB call.
+The turn comes Nine Of Spade, then SB bet 28 chips.
+
+
+Now it is your turn to make a move.
+To remind you, the current pot size is 75.0 chips, and your holding is [Jack of Heart and Jack of Diamond].
+
+Your optimal action is: raise 77
+
+Explain your reasoning step by step. Format your answer in this structure:
+1. Stage: <Preflop / Flop / Turn / River>
+2. Known info: <board cards, hero hand, stack sizes, position>
+3. Opponent range estimate: <brief logic>
+4. Pot odds and equity estimate: <numbers or qualitative>
+5. Action reasoning: <why fold / call / raise>
+6. Final decision: <FOLD / CHECK / CALL / BET X / RAISE X / ALL IN>
+----------------------------------------
+
+
+You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips and the big blind is 1 chips. Everyone started with 100 chips.
+The player positions involved in this game are UTG, HJ, CO, BTN, SB, BB.
+In this hand, your position is BTN, and your holding is [Nine of Diamond and Nine of Club].
+Before the flop, BTN raise 2.5 chips, SB raise 12.0 chips, and BTN call. Assume that all other players that is not mentioned folded.
+The flop comes Six Of Spade, Eight Of Diamond, and Seven Of Club, then SB check, and BTN check.
+The turn comes Jack Of Spade, then SB bet 28 chips.
+
+
+Now it is your turn to make a move.
+To remind you, the current pot size is 53.0 chips, and your holding is [Nine of Diamond and Nine of Club].
+
+Your optimal action is: call
+
+Explain your reasoning step by step. Format your answer in this structure:
+1. Stage: <Preflop / Flop / Turn / River>
+2. Known info: <board cards, hero hand, stack sizes, position>
+3. Opponent range estimate: <brief logic>
+4. Pot odds and equity estimate: <numbers or qualitative>
+5. Action reasoning: <why fold / call / raise>
+6. Final decision: <FOLD / CHECK / CALL / BET X / RAISE X / ALL IN>
+----------------------------------------
+
+
+You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips and the big blind is 1 chips. Everyone started with 100 chips.
+The player positions involved in this game are UTG, HJ, CO, BTN, SB, BB.
+In this hand, your position is BB, and your holding is [Eight of Spade and Seven of Spade].
+Before the flop, BTN raise 2.5 chips, and BB call. Assume that all other players that is not mentioned folded.
+The flop comes Jack Of Spade, King Of Spade, and Five Of Diamond, then BB check, and BTN check.
+The turn comes Eight Of Heart, then BB bet 4 chips, and BTN raise 13 chips.
+
+
+Now it is your turn to make a move.
+To remind you, the current pot size is 22.0 chips, and your holding is [Eight of Spade and Seven of Spade].
+
+Your optimal action is: raise 33
+
+Explain your reasoning step by step. Format your answer in this structure:
+1. Stage: <Preflop / Flop / Turn / River>
+2. Known info: <board cards, hero hand, stack sizes, position>
+3. Opponent range estimate: <brief logic>
+4. Pot odds and equity estimate: <numbers or qualitative>
+5. Action reasoning: <why fold / call / raise>
+6. Final decision: <FOLD / CHECK / CALL / BET X / RAISE X / ALL IN>
+----------------------------------------
+
+
+You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips and the big blind is 1 chips. Everyone started with 100 chips.
+The player positions involved in this game are UTG, HJ, CO, BTN, SB, BB.
+In this hand, your position is BTN, and your holding is [Queen of Heart and Nine of Club].
+Before the flop, BTN raise 2.5 chips, and BB call. Assume that all other players that is not mentioned folded.
+The flop comes Nine Of Diamond, Ten Of Spade, and Eight Of Spade, then BB check, and BTN check.
+The turn comes Jack Of Heart, then BB check, BTN bet 6 chips, BB raise 17 chips, and BTN call.
+The river comes Ace Of Club, then BB bet 20 chips.
+
+
+Now it is your turn to make a move.
+To remind you, the current pot size is 59.0 chips, and your holding is [Queen of Heart and Nine of Club].
+
+Your optimal action is: call
+
+Explain your reasoning step by step. Format your answer in this structure:
+1. Stage: <Preflop / Flop / Turn / River>
+2. Known info: <board cards, hero hand, stack sizes, position>
+3. Opponent range estimate: <brief logic>
+4. Pot odds and equity estimate: <numbers or qualitative>
+5. Action reasoning: <why fold / call / raise>
+6. Final decision: <FOLD / CHECK / CALL / BET X / RAISE X / ALL IN>
+----------------------------------------
+
+
+You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips and the big blind is 1 chips. Everyone started with 100 chips.
+The player positions involved in this game are UTG, HJ, CO, BTN, SB, BB.
+In this hand, your position is BTN, and your holding is [Jack of Club and Eight of Club].
+Before the flop, BTN raise 2.5 chips, and BB call. Assume that all other players that is not mentioned folded.
+The flop comes Ten Of Heart, Four Of Club, and Five Of Diamond, then BB check, and BTN check.
+The turn comes Seven Of Spade, then BB bet 4 chips, and BTN call.
+The river comes Three Of Diamond, then BB check.
+
+
+Now it is your turn to make a move.
+To remind you, the current pot size is 13.0 chips, and your holding is [Jack of Club and Eight of Club].
+
+Your optimal action is: bet 10
+
+Explain your reasoning step by step. Format your answer in this structure:
+1. Stage: <Preflop / Flop / Turn / River>
+2. Known info: <board cards, hero hand, stack sizes, position>
+3. Opponent range estimate: <brief logic>
+4. Pot odds and equity estimate: <numbers or qualitative>
+5. Action reasoning: <why fold / call / raise>
+6. Final decision: <FOLD / CHECK / CALL / BET X / RAISE X / ALL IN>
+----------------------------------------
+
+
+You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips and the big blind is 1 chips. Everyone started with 100 chips.
+The player positions involved in this game are UTG, HJ, CO, BTN, SB, BB.
+In this hand, your position is BB, and your holding is [Ace of Diamond and Ten of Diamond].
+Before the flop, HJ raise 2.0 chips, and BB call. Assume that all other players that is not mentioned folded.
+The flop comes Jack Of Heart, Four Of Heart, and Five Of Spade, then BB check, and HJ check.
+The turn comes Two Of Diamond, then BB check, HJ bet 3 chips, BB raise 10 chips, and HJ call.
+The river comes Queen Of Club, then BB bet 12 chips, and HJ raise 44 chips.
+
+
+Now it is your turn to make a move.
+To remind you, the current pot size is 80.0 chips, and your holding is [Ace of Diamond and Ten of Diamond].
+
+Your optimal action is: fold
+
+Explain your reasoning step by step. Format your answer in this structure:
+1. Stage: <Preflop / Flop / Turn / River>
+2. Known info: <board cards, hero hand, stack sizes, position>
+3. Opponent range estimate: <brief logic>
+4. Pot odds and equity estimate: <numbers or qualitative>
+5. Action reasoning: <why fold / call / raise>
+6. Final decision: <FOLD / CHECK / CALL / BET X / RAISE X / ALL IN>
+----------------------------------------
+
+
+You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips and the big blind is 1 chips. Everyone started with 100 chips.
+The player positions involved in this game are UTG, HJ, CO, BTN, SB, BB.
+In this hand, your position is HJ, and your holding is [King of Diamond and Ten of Spade].
+Before the flop, HJ raise 2.0 chips, and BB call. Assume that all other players that is not mentioned folded.
+The flop comes Five Of Club, Five Of Diamond, and Ace Of Heart, then BB check, and HJ check.
+The turn comes Three Of Heart, then BB check, HJ bet 3 chips, and BB call.
+The river comes Two Of Club, then BB check.
+
+
+Now it is your turn to make a move.
+To remind you, the current pot size is 10.0 chips, and your holding is [King of Diamond and Ten of Spade].
+
+Your optimal action is: check
+
+Explain your reasoning step by step. Format your answer in this structure:
+1. Stage: <Preflop / Flop / Turn / River>
+2. Known info: <board cards, hero hand, stack sizes, position>
+3. Opponent range estimate: <brief logic>
+4. Pot odds and equity estimate: <numbers or qualitative>
+5. Action reasoning: <why fold / call / raise>
+6. Final decision: <FOLD / CHECK / CALL / BET X / RAISE X / ALL IN>
+----------------------------------------
+
+
+You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips and the big blind is 1 chips. Everyone started with 100 chips.
+The player positions involved in this game are UTG, HJ, CO, BTN, SB, BB.
+In this hand, your position is SB, and your holding is [Ace of Heart and King of Club].
+Before the flop, SB raise 3.0 chips, and BB call. Assume that all other players that is not mentioned folded.
+The flop comes King Of Spade, Seven Of Heart, and Two Of Diamond, then SB bet 2 chips, and BB call.
+The turn comes Jack Of Club, then SB check, and BB bet 8 chips.
+
+
+Now it is your turn to make a move.
+To remind you, the current pot size is 18.0 chips, and your holding is [Ace of Heart and King of Club].
+
+Your optimal action is: call
+
+Explain your reasoning step by step. Format your answer in this structure:
+1. Stage: <Preflop / Flop / Turn / River>
+2. Known info: <board cards, hero hand, stack sizes, position>
+3. Opponent range estimate: <brief logic>
+4. Pot odds and equity estimate: <numbers or qualitative>
+5. Action reasoning: <why fold / call / raise>
+6. Final decision: <FOLD / CHECK / CALL / BET X / RAISE X / ALL IN>
+----------------------------------------
+
+
+You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips and the big blind is 1 chips. Everyone started with 100 chips.
+The player positions involved in this game are UTG, HJ, CO, BTN, SB, BB.
+In this hand, your position is BB, and your holding is [King of Spade and Seven of Diamond].
+Before the flop, SB call, BB raise 3.0, and SB all in. Assume that all other players that is not mentioned folded.
+
+Now it is your turn to make a move.
+To remind you, the current pot size is 103.0 chips, and your holding is [King of Spade and Seven of Diamond].
+
+Your optimal action is: fold
+
+Explain your reasoning step by step. Format your answer in this structure:
+1. Stage: <Preflop / Flop / Turn / River>
+2. Known info: <board cards, hero hand, stack sizes, position>
+3. Opponent range estimate: <brief logic>
+4. Pot odds and equity estimate: <numbers or qualitative>
+5. Action reasoning: <why fold / call / raise>
+6. Final decision: <FOLD / CHECK / CALL / BET X / RAISE X / ALL IN>
+----------------------------------------
+
+
+You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips and the big blind is 1 chips. Everyone started with 100 chips.
+The player positions involved in this game are UTG, HJ, CO, BTN, SB, BB.
+In this hand, your position is BB, and your holding is [King of Diamond and Queen of Club].
+Before the flop, UTG raise 2.0, and SB call. Assume that all other players that is not mentioned folded.
+
+Now it is your turn to make a move.
+To remind you, the current pot size is 5.0 chips, and your holding is [King of Diamond and Queen of Club].
+
+Your optimal action is: raise 11.0
+
+Explain your reasoning step by step. Format your answer in this structure:
+1. Stage: <Preflop / Flop / Turn / River>
+2. Known info: <board cards, hero hand, stack sizes, position>
+3. Opponent range estimate: <brief logic>
+4. Pot odds and equity estimate: <numbers or qualitative>
+5. Action reasoning: <why fold / call / raise>
+6. Final decision: <FOLD / CHECK / CALL / BET X / RAISE X / ALL IN>
+----------------------------------------
+
+
+You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips and the big blind is 1 chips. Everyone started with 100 chips.
+The player positions involved in this game are UTG, HJ, CO, BTN, SB, BB.
+In this hand, your position is SB, and your holding is [Ace of Spade and Ace of Heart].
+Before the flop, HJ raise 2.0, CO call, BTN raise 9.5, SB raise 24.1, BB call, HJ call, CO fold, and BTN all in. Assume that all other players that is not mentioned folded.
+
+Now it is your turn to make a move.
+To remind you, the current pot size is 174.3 chips, and your holding is [Ace of Spade and Ace of Heart].
+
+Your optimal action is: call
+
+Explain your reasoning step by step. Format your answer in this structure:
+1. Stage: <Preflop / Flop / Turn / River>
+2. Known info: <board cards, hero hand, stack sizes, position>
+3. Opponent range estimate: <brief logic>
+4. Pot odds and equity estimate: <numbers or qualitative>
+5. Action reasoning: <why fold / call / raise>
+6. Final decision: <FOLD / CHECK / CALL / BET X / RAISE X / ALL IN>
+----------------------------------------
+
+
+You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips and the big blind is 1 chips. Everyone started with 100 chips.
+The player positions involved in this game are UTG, HJ, CO, BTN, SB, BB.
+In this hand, your position is BTN, and your holding is [Ace of Club and King of Diamond].
+Before the flop, BTN raise 2.5 chips, and BB call. Assume that all other players that is not mentioned folded.
+The flop comes Seven Of Diamond, Six Of Club, and Four Of Heart, then BB check, BTN bet 2 chips, and BB call.
+The turn comes Five Of Heart, then BB check, BTN bet 7 chips, BB raise 22 chips, and BTN call.
+The river comes King Of Heart, then BB check.
+
+
+Now it is your turn to make a move.
+To remind you, the current pot size is 51.0 chips, and your holding is [Ace of Club and King of Diamond].
+
+Your optimal action is: check
+
+Explain your reasoning step by step. Format your answer in this structure:
+1. Stage: <Preflop / Flop / Turn / River>
+2. Known info: <board cards, hero hand, stack sizes, position>
+3. Opponent range estimate: <brief logic>
+4. Pot odds and equity estimate: <numbers or qualitative>
+5. Action reasoning: <why fold / call / raise>
+6. Final decision: <FOLD / CHECK / CALL / BET X / RAISE X / ALL IN>
+----------------------------------------
+
+
+You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips and the big blind is 1 chips. Everyone started with 100 chips.
+The player positions involved in this game are UTG, HJ, CO, BTN, SB, BB.
+In this hand, your position is CO, and your holding is [Ace of Club and Queen of Club].
+Before the flop, UTG raise 2.0 chips, CO raise 6.5 chips, and UTG call. Assume that all other players that is not mentioned folded.
+The flop comes Jack Of Heart, Four Of Heart, and Five Of Spade, then UTG check, CO bet 7 chips, and UTG raise 16 chips.
+
+
+Now it is your turn to make a move.
+To remind you, the current pot size is 37.0 chips, and your holding is [Ace of Club and Queen of Club].
+
+Your optimal action is: call
+
+Explain your reasoning step by step. Format your answer in this structure:
+1. Stage: <Preflop / Flop / Turn / River>
+2. Known info: <board cards, hero hand, stack sizes, position>
+3. Opponent range estimate: <brief logic>
+4. Pot odds and equity estimate: <numbers or qualitative>
+5. Action reasoning: <why fold / call / raise>
+6. Final decision: <FOLD / CHECK / CALL / BET X / RAISE X / ALL IN>
+----------------------------------------
+
+
+You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips and the big blind is 1 chips. Everyone started with 100 chips.
+The player positions involved in this game are UTG, HJ, CO, BTN, SB, BB.
+In this hand, your position is CO, and your holding is [Ace of Spade and Ace of Diamond].
+Before the flop, CO raise 2.3 chips, and BTN call. Assume that all other players that is not mentioned folded.
+The flop comes Jack Of Heart, Four Of Heart, and Five Of Spade, then CO bet 5 chips, BTN raise 16 chips, and CO call.
+The turn comes Two Of Diamond, then CO bet 48 chips, and BTN raise 81 chips.
+
+
+Now it is your turn to make a move.
+To remind you, the current pot size is 167.0 chips, and your holding is [Ace of Spade and Ace of Diamond].
+
+Your optimal action is: call
+
+Explain your reasoning step by step. Format your answer in this structure:
+1. Stage: <Preflop / Flop / Turn / River>
+2. Known info: <board cards, hero hand, stack sizes, position>
+3. Opponent range estimate: <brief logic>
+4. Pot odds and equity estimate: <numbers or qualitative>
+5. Action reasoning: <why fold / call / raise>
+6. Final decision: <FOLD / CHECK / CALL / BET X / RAISE X / ALL IN>
+----------------------------------------
+
+
+You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips and the big blind is 1 chips. Everyone started with 100 chips.
+The player positions involved in this game are UTG, HJ, CO, BTN, SB, BB.
+In this hand, your position is BB, and your holding is [King of Diamond and Nine of Heart].
+Before the flop, HJ raise 2.0 chips, and BB call. Assume that all other players that is not mentioned folded.
+The flop comes Jack Of Spade, Eight Of Diamond, and Three Of Club, then BB check, and HJ check.
+The turn comes Nine Of Diamond, then BB check, HJ bet 5 chips, BB raise 14 chips, and HJ call.
+The river comes Two Of Heart, then BB bet 16 chips, and HJ raise 58 chips.
+
+
+Now it is your turn to make a move.
+To remind you, the current pot size is 106.0 chips, and your holding is [King of Diamond and Nine of Heart].
+
+Your optimal action is: fold
+
+Explain your reasoning step by step. Format your answer in this structure:
+1. Stage: <Preflop / Flop / Turn / River>
+2. Known info: <board cards, hero hand, stack sizes, position>
+3. Opponent range estimate: <brief logic>
+4. Pot odds and equity estimate: <numbers or qualitative>
+5. Action reasoning: <why fold / call / raise>
+6. Final decision: <FOLD / CHECK / CALL / BET X / RAISE X / ALL IN>
+----------------------------------------
+
+
+You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips and the big blind is 1 chips. Everyone started with 100 chips.
+The player positions involved in this game are UTG, HJ, CO, BTN, SB, BB.
+In this hand, your position is BB, and your holding is [King of Diamond and Seven of Club].
+Before the flop, SB raise 3.0 chips, BB raise 10.0 chips, and SB call. Assume that all other players that is not mentioned folded.
+The flop comes Jack Of Spade, Eight Of Diamond, and Three Of Club, then SB check, BB bet 4 chips, and SB call.
+The turn comes Nine Of Diamond, then SB check.
+
+
+Now it is your turn to make a move.
+To remind you, the current pot size is 28.0 chips, and your holding is [King of Diamond and Seven of Club].
+
+Your optimal action is: check
+
+Explain your reasoning step by step. Format your answer in this structure:
+1. Stage: <Preflop / Flop / Turn / River>
+2. Known info: <board cards, hero hand, stack sizes, position>
+3. Opponent range estimate: <brief logic>
+4. Pot odds and equity estimate: <numbers or qualitative>
+5. Action reasoning: <why fold / call / raise>
+6. Final decision: <FOLD / CHECK / CALL / BET X / RAISE X / ALL IN>
+----------------------------------------

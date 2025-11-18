@@ -1,0 +1,2774 @@
+PROMPT 1:
+
+You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips and the big blind is 1 chips. Everyone started with 100 chips.
+The player positions involved in this game are UTG, HJ, CO, BTN, SB, BB.
+In this hand, your position is BTN, and your holding is [Nine of Club and Eight of Club].
+Before the flop, BTN raise 2.5 chips, and BB call. Assume that all other players that is not mentioned folded.
+The flop comes Nine Of Diamond, Ten Of Spade, and Eight Of Spade, then BB check, and BTN check.
+The turn comes Five Of Diamond, then BB bet 6 chips, BTN raise 17 chips, and BB call.
+The river comes Two Of Diamond, then BB check.
+
+
+Now it is your turn to make a move.
+To remind you, the current pot size is 39.0 chips, and your holding is [Nine of Club and Eight of Club].
+
+Explain your reasoning step by step. Format your answer in this structure:
+1. Stage: <Preflop / Flop / Turn / River>
+2. Known info: <board cards, hero hand, stack sizes, position>
+3. Opponent range estimate: <brief logic>
+4. Pot odds and equity estimate: <numbers or qualitative>
+5. Action reasoning: <why fold / call / raise>
+6. Final decision: <FOLD / CHECK / CALL / BET X / RAISE X / ALL IN>
+
+
+CoT 1:
+Below is the full step-by-step analysis for the **RIVER** decision with **9♣8♣** on **T♠ 9♦ 8♠ 5♦ 2♦** after BB checks to us.
+
+---
+
+## 1. Stage: **River**
+
+## 2. Known info
+
+* **Board:** T♠ 9♦ 8♠ 5♦ 2♦
+* **Hero (BTN):** 9♣ 8♣ → **two pair (Nines & Eights)**
+* **Effective stacks:** Started 100, pot is **39** now; both players have plenty behind.
+* **Positions:** BTN (hero) vs BB.
+
+## 3. Opponent range estimate
+
+**Preflop:** BB flats wide: suited broadways, suited connectors, suited gappers, offsuit broadways, many suited Ax, most pairs.
+
+**Flop (T♠9♦8♠) – BB checks, we check:**
+When we check back, BB keeps **all draws**, **all Tx**, **all 9x**, **all 8x**, **pairs**, and **two-pairs/straights** (though J7 / QJ are possible but less likely because they usually bet flop often, but not always).
+
+**Turn (5♦) – BB bets 6 into ~10.5, Hero raises to 17, BB calls:**
+BB calling our raise removes a lot of weak air.
+Villain’s continuing range includes:
+
+* **Strong made hands:**
+
+  * Tx, 9x, 8x
+  * Two-pair: T9, T8, 98
+  * Sets: TT/99/88 (but many 99/88 partially blocked by our hand)
+* **Straights:** QJ, J7s
+* **Strong draws:**
+
+  * **Flush draws:** Ax♦, Kx♦, Qx♦, J♦ combos
+  * Combo draws: e.g., Q♦J♠, J♦7♠
+  * Pair+FDs (T♦x, 9♦x, 8♦x)
+* **Weaker draws that float turn raise:** A♠X♠ sometimes, but less likely because spade draw bricked and BB may fold some.
+
+**River (2♦)** completes **the diamond flush**.
+BB checks → generally **denies the strongest flushes**, which often lead river.
+Likely hands when checking river:
+
+* **One-pair:** T9? Actually two-pair. But Tx, 9x, 8x.
+* **Two-pair:** 98 (same as us), T9, T8
+* **Straights (QJ/J7)** sometimes check, fearing flush.
+* **Flushes:** Some low diamond flushes may check, fearing a river diamond raise.
+* **Bluffs:** Missed spade draws.
+
+---
+
+## 4. Pot odds and equity estimate
+
+We have **two pair** on a board that now has:
+
+* 4-card straight possibilities (QJ, J7)
+* Completed backdoor flush (♦♦♦)
+* Better two-pair (T9/T8)
+* Sets
+
+Our hand is **good but rarely strong enough to value-bet big**, because:
+
+* Worse hands that call: **Tx, 9x, maybe 8x**, occasionally worse two-pair
+* Better hands that call/raise: **flushes**, **straights**, **sets**, **better two-pair**
+
+We are almost always **ahead of his bluffing range**.
+We almost always get **called by better** if we bet big.
+We get some thin value from Tx/9x/8x if we bet small.
+
+But after turn raise + river diamond, most opponents become **much tighter** calling river bets.
+
+So mathematically:
+A value bet must be **thin**, like 8–12 chips.
+But checking behind guarantees our equity and avoids running into the flushes/straights.
+
+---
+
+## 5. Action reasoning
+
+**Arguments for betting:**
+
+* Villain has many one-pair hands that might call a small bet.
+* Our hand is too strong to check-fold, so we never fold.
+* A small bet gets value from Tx and 9x.
+
+**Arguments for checking:**
+
+* River completed the flush → many villain continue-range hands improved.
+* Worse two-pair is rare; better two-pair and straights exist.
+* Turn raise from us polarizes our range, so villain is more likely to call river with strong made hands → we risk value-owning ourselves.
+* Our hand has strong showdown value.
+
+**Optimal GTO-style choice:**
+**Check back**.
+Two pair on a 4-flush/4-straight board is a strong bluff-catcher, not a value hand.
+
+---
+
+## 6. Final decision: **CHECK**
+
+We take our showdown value; betting is thin and often value-cuts against flushes and straights.
+
+
+CoT 2:
+Let's break this down step by step:
+
+---
+
+### 1. Stage: **River**
+
+* The river card is the **Two of Diamonds**.
+* The current **pot size** is **39.0 chips**.
+* Your **holding** is **Nine of Clubs and Eight of Clubs**.
+* The action is now on you, as the BB has checked.
+
+---
+
+### 2. Known Info:
+
+* **Board**: Nine of Diamonds, Ten of Spades, Eight of Spades, Five of Diamonds, Two of Diamonds.
+* **Hero hand**: Nine of Clubs, Eight of Clubs.
+* **Position**: You are on the **Button (BTN)**.
+* **Opponent's action so far**:
+
+  * The BB checked on the flop, bet 6 chips on the turn, then called your raise to 17 chips on the turn.
+  * On the river, the BB has checked again.
+
+---
+
+### 3. Opponent Range Estimate:
+
+* The BB's action preflop (just calling the raise) suggests a wide range of hands, potentially weaker pairs, connectors, suited hands, or broadway cards.
+* On the **flop**, the BB checked, which could indicate a weak hand or just a check with a medium-strength hand.
+* On the **turn**, the BB bet 6 chips after the **Five of Diamonds** appeared. This bet size is small relative to the pot (6 out of 39), possibly indicating either a weak value bet, a draw, or a very weak hand trying to see a cheap river card.
+* After your **raise to 17 chips**, the BB called, which suggests some potential hand strength. Given that they called, the BB might have a medium pair (such as 7s, 6s, or lower), or a draw that didn't improve, like a flush draw, or perhaps a straight draw.
+
+Considering the board and their line, the BB's range could be:
+
+* **A medium pair** like 7x, 6x, or even 5x (for a pair of fives).
+* **A draw** that didn't hit (like a heart or diamond flush draw).
+* **A weaker straight**, such as 6-7 or 7-8, or even a lower straight (e.g., 5-6).
+
+The **Two of Diamonds** on the river doesn't help many of the hands in the BB's range except those with two diamonds, and those are unlikely to have called your turn raise unless they were holding a very specific hand, like 6-7 of diamonds or a 5-6 of diamonds.
+
+---
+
+### 4. Pot Odds and Equity Estimate:
+
+* The pot is **39 chips**, and your opponent has checked to you.
+* The **BB** has 6 chips remaining in their stack, and you are considering whether to bet or check.
+* The pot odds you're getting for a decision are very favorable for checking (you get to see the showdown without investing any additional chips).
+
+Since the board is **completed** (no more cards can come), the **BB's range** appears weak for many hands at this stage, but a bet could only make sense if you have a **clear value hand** or a strong **bluffing opportunity**.
+
+In this case:
+
+* You have a **medium-strength hand**: You have a pair of **nines** and a **pair of eights** (which forms two pair). But, most of the hands that the BB could have (such as 7x, 5x, or low flushes) beat you, and there’s no real strong reason to believe that the BB would fold a better hand to a single bet.
+* Betting here could be risky because if the BB calls, you're likely behind.
+
+---
+
+### 5. Action Reasoning:
+
+* **Betting** seems unnecessary and potentially a losing move, as your two pair is not a very strong hand given the possible straight or flush hands your opponent might have.
+* You would **only bet for value** if you had a stronger hand, but your two pair is not likely to be the best hand in this spot.
+* Since the BB has checked, **checking back** allows you to reach the showdown without risking any more chips and is the safest play.
+
+Additionally, given the range of hands your opponent could have (medium pairs, missed draws), the **BB may not fold a better hand** if you decide to bet. Checking lets you minimize losses in case you're behind.
+
+---
+
+### 6. Final Decision: **CHECK**
+
+You should **check**. You have a relatively weak two pair and no real advantage in betting. Checking avoids losing additional chips and allows you to see the outcome without risking more of your stack.
+
+
+
+PROMPT 2:
+
+You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips and the big blind is 1 chips. Everyone started with 100 chips.
+The player positions involved in this game are UTG, HJ, CO, BTN, SB, BB.
+In this hand, your position is BTN, and your holding is [Queen of Diamond and Ten of Spade].
+Before the flop, BTN raise 2.5 chips, and BB call. Assume that all other players that is not mentioned folded.
+The flop comes Ten Of Heart, Four Of Club, and Five Of Diamond, then BB check, and BTN check.
+The turn comes King Of Diamond, then BB check, BTN bet 6 chips, and BB call.
+The river comes Queen Of Heart, then BB bet 9 chips.
+
+
+Now it is your turn to make a move.
+To remind you, the current pot size is 26.0 chips, and your holding is [Queen of Diamond and Ten of Spade].
+
+Explain your reasoning step by step. Format your answer in this structure:
+1. Stage: <Preflop / Flop / Turn / River>
+2. Known info: <board cards, hero hand, stack sizes, position>
+3. Opponent range estimate: <brief logic>
+4. Pot odds and equity estimate: <numbers or qualitative>
+5. Action reasoning: <why fold / call / raise>
+6. Final decision: <FOLD / CHECK / CALL / BET X / RAISE X / ALL IN>
+
+
+CoT 1:
+
+Below is the full step-by-step **RIVER** analysis with **Q♦ T♠** on **T♥ 4♣ 5♦ K♦ Q♥**, facing a **9-chip donk bet** from BB into a **26-chip pot**.
+
+---
+
+## 1. Stage: **River**
+
+## 2. Known info
+
+* **Board:** T♥ 4♣ 5♦ K♦ Q♥
+* **Hero (BTN):** Q♦ T♠ → **two pair (Queens & Tens)**
+* **Pot:** 26 chips
+* **River action:** BB leads 9 chips
+* **Effective stacks:** Deep (started 100)
+
+## 3. Opponent range estimate
+
+### **Preflop (BB calls BTN 2.5x)**
+
+BB calls wide: all suited broadways, suited connectors, most Tx, mid–low pairs, Ax suited, offsuit broadways, etc.
+
+### **Flop (T 4 5 rainbow) – BB checks, Hero checks**
+
+BB keeps:
+
+* Tx (T9–T2 suited, TJo/TQo sometimes)
+* 5x, 4x
+* Pocket pairs 22–99
+* Straight draws: 76, 63, A3
+* Backdoor diamonds
+
+Hero checking back keeps BB’s range wide and disguises our top pair.
+
+### **Turn (K♦) – BB checks, Hero bets 6, BB calls**
+
+BB calling range now includes:
+
+* **Kx** (K9–K2 suited, KJo, KQo sometimes)
+* **Tx**, **5x**, **4x**
+* **Diamond draws**, especially A♦x, Q♦x, J♦x, 9♦x
+* **Straight draws** (A3, 63, 76)
+* Some slow-played sets (55/44) but much less likely
+
+### **River (Q♥) – BB leads 9**
+
+BB’s donk lead is usually **thin value or block-bet**, not nutted:
+
+* **Hands that improved to 2-pair or worse pair:**
+
+  * Qx (Q9–Q2 suited, QJo)
+  * Kx
+  * Tx
+* **Missed draws trying to buy a cheap showdown:**
+
+  * 76, 63, A3
+  * Some busted diamonds (non-nut)
+
+Hands beating us:
+
+* KQ
+* QT (we block)
+* Sets (55, 44, TT) — but these almost always raise earlier
+* Straights: 76 gets there? **Board is T-4-5-K-Q → 76 does NOT make a straight**
+  So straights **miss**.
+
+River Q♥ dramatically reduces villain having strong KQ combos (blocker), improves us to **top two pair**, and kills most draws.
+
+This is almost always a **weak value bet or a bluff**.
+
+---
+
+## 4. Pot odds and equity estimate
+
+BB bets **9 into 26**, giving us:
+
+[
+\text{Pot odds} = \frac{9}{26 + 9} = \frac{9}{35} \approx 25.7%
+]
+
+We need **~26% equity** to call.
+
+With **top two pair**, our equity vs his leading range is **far higher than 50%**.
+We are almost never folding.
+
+The question becomes: **call or raise?**
+
+---
+
+## 5. Action reasoning
+
+### **Why raising is bad**
+
+* Worse hands that bet (Kx, QJ/Q9, Tx) often **fold** to a raise.
+* Better hands (KQ, sets) **never fold**.
+* Missed draws fold.
+  → A raise isolates us vs better hands = **value-owned**.
+
+### **Why calling is optimal**
+
+* BB has tons of weaker value hands: Kx/Qx/T pairs
+* And many bluffs: missed diamonds, 76/63/A3
+* Our hand is very strong but not strong enough to three-bet river for value
+* River donk bet is a classic **block-bet**, a size used to prevent us from betting bigger
+
+→ With top two pair and a polarized villain range, **call maximizes EV**.
+
+---
+
+## 6. Final decision: **CALL**
+
+We beat almost all of villain’s value range, lose only to a few combos, and raising would only get action from hands that crush us.
+
+**Final: CALL**
+
+
+CoT 2:
+
+Let's break this down step by step to determine the optimal decision:
+
+---
+
+### 1. Stage: **River**
+
+* The **river** card is the **Queen of Hearts**.
+* The **pot size** is **26.0 chips**.
+* Your **holding** is **Queen of Diamonds** and **Ten of Spades**.
+* Your opponent, in the **big blind (BB)**, has bet **9 chips**.
+* The action is now on you to decide whether to **call**, **raise**, or **fold**.
+
+---
+
+### 2. Known Info:
+
+* **Board**: Ten of Hearts, Four of Clubs, Five of Diamonds, King of Diamonds, Queen of Hearts.
+* **Hero hand**: **Queen of Diamonds and Ten of Spades**.
+* **Position**: You are on the **Button (BTN)**, and the opponent is in the **Big Blind (BB)**.
+* **Opponent's action so far**:
+
+  * **Preflop**: The BB called your raise of 2.5 chips.
+  * **Flop**: The BB checked, and you checked behind.
+  * **Turn**: The **King of Diamonds** came, the BB checked, and you bet 6 chips. The BB called.
+  * **River**: The **Queen of Hearts** came, and the BB now bets 9 chips into a pot of 26 chips.
+
+---
+
+### 3. Opponent Range Estimate:
+
+* The **BB's check-call on the flop** indicates a relatively wide range of hands. They might have had a **middle pair** (such as 5x, 4x, or 6x), or **straight/flush draws** (like a hand with diamonds or a hand like 6-7 for a straight draw).
+* The **BB's check-call on the turn** suggests they have something they are willing to call with. They could be holding:
+
+  * **A weak pair** (like 5x, 4x, or 7x) that did not improve.
+  * **A straight draw** (such as 6-7, which missed the straight).
+  * **A flush draw** that did not complete (if they had two diamonds).
+  * **A King** (perhaps Kx) or even **a pair of Queens** (Qx), which would now be a strong hand.
+* On the **river**, the BB has bet **9 chips**, a relatively small bet into a pot of 26. This could indicate:
+
+  * A **value bet** with a strong hand like a **pair of Kings**, **two pair**, or potentially even a **straight**.
+  * A **bluff** or weak value bet with something like a **pair of 5s** or **a missed draw**.
+
+Given the betting pattern, we can estimate that the BB's range could include:
+
+* **Two pair** (e.g., K-Q, 5-Q, or even K-5).
+* **A single King** (Kx).
+* **Weaker hands** like **pairs of 5s or 4s**, which might call your bet on the turn, but are weak at the river.
+* **Missed draws** (flush or straight draws that didn't hit).
+* **A bluff** with missed draws or weak pairs.
+
+---
+
+### 4. Pot Odds and Equity Estimate:
+
+* The **pot size** is **26 chips**.
+* The **BB's bet** is **9 chips**, so you're being asked to call **9 chips** to potentially win **35 chips** (the pot + BB's bet).
+* Your pot odds are **9 to 35**, which translates to approximately **26%** pot odds.
+* To break even on a call, your hand needs to have **at least 26% equity** against the BB’s range.
+
+Now let's look at your **equity**:
+
+* Your **hand** is **two pair**: **Queens and Tens**.
+* Two pair is generally a strong hand, but there are many hands that could beat you (like a **King**, **better two pair**, or a **straight**).
+
+However, the **BB's range** also includes many hands that you beat, such as:
+
+* **A missed draw** (flush or straight).
+* **Weaker pairs** like **5x, 4x**, or **7x**.
+* **Bluffs** or weak hands.
+
+Given that you have **two pair**, you’re **likely ahead of many hands** in the BB’s range, especially if they have a weak pair or missed draw. Therefore, calling here makes sense because you have a reasonable chance of having the best hand.
+
+---
+
+### 5. Action Reasoning:
+
+* **Folding** is too cautious, as you have a relatively strong hand (two pair) and are getting good pot odds. The BB could easily be bluffing or betting a weak value hand that you beat.
+* **Raising** is risky since you’re not confident you have the best hand. The BB’s bet is small relative to the pot, suggesting they may not have a monster hand. A raise could result in losing even more chips if you're behind, and it’s unlikely to get value from worse hands that would fold.
+* **Calling** is the most optimal choice. You have two pair, and the pot odds are favorable. You're likely ahead of many hands in the BB's range, and calling allows you to see the outcome without risking more chips unnecessarily.
+
+---
+
+### 6. Final Decision: **CALL**
+
+You should **call**. You have a strong enough hand to call given the pot odds and the likelihood that you’re ahead of many of the hands in the BB's range.
+
+
+
+PROMPT 3:
+
+You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips and the big blind is 1 chips. Everyone started with 100 chips.
+The player positions involved in this game are UTG, HJ, CO, BTN, SB, BB.
+In this hand, your position is BB, and your holding is [Ace of Club and Ten of Club].
+Before the flop, SB raise 3.0 chips, and BB call. Assume that all other players that is not mentioned folded.
+The flop comes Jack Of Spade, King Of Spade, and Five Of Diamond, then SB check, and BB check.
+The turn comes Eight Of Heart, then SB check, BB bet 5 chips, SB raise 16 chips, and BB call.
+The river comes Five Of Club, then SB check.
+
+
+Now it is your turn to make a move.
+To remind you, the current pot size is 38.0 chips, and your holding is [Ace of Club and Ten of Club].
+
+Your optimal action is: check
+
+Explain your reasoning step by step. Format your answer in this structure:
+1. Stage: <Preflop / Flop / Turn / River>
+2. Known info: <board cards, hero hand, stack sizes, position>
+3. Opponent range estimate: <brief logic>
+4. Pot odds and equity estimate: <numbers or qualitative>
+5. Action reasoning: <why fold / call / raise>
+6. Final decision: <FOLD / CHECK / CALL / BET X / RAISE X / ALL IN>
+
+
+CoT 1:
+
+Below is the complete, step-by-step **RIVER** analysis for BB holding **A♣ T♣** on **K♠ J♠ 5♦ 8♥ 5♣**, after SB checks to you.
+
+---
+
+## 1. Stage: **River**
+
+## 2. Known info
+
+* **Board:** K♠ J♠ 5♦ 8♥ 5♣
+* **Hero (BB):** A♣ T♣ → **Ace-high**, no pair
+* **Pot:** 38 chips
+* **Stacks:** Deep (started 100)
+* **River action:** SB checks after check/raise on turn
+* **Positions:** SB (raiser preflop) vs BB (hero)
+
+---
+
+## 3. Opponent range estimate
+
+### **Preflop – SB raises, BB calls**
+
+SB raising range (3x) includes:
+
+* All broadways (A/K/Q/J combos)
+* Strong Ax, some suited A2–A5
+* Pairs 22–QQ/KK/AA
+* Suited connectors down to 65s
+* Some suited gappers
+
+### **Flop (K J 5), SB checks, we check**
+
+SB checking removes most strong top-pair+ hands from his range or indicates pot-control.
+SB still has:
+
+* **Medium strength:** Jx, 5x, Kx (often checks some Kx)
+* **Draws:** spades, QT, T9
+* **Air:** A4/A3/A2, Qx, Tx, small suited connectors
+
+### **Turn (8♥) – SB checks, we bet 5, SB raises to 16, we call**
+
+This is the KEY node.
+
+SB’s check-raise is usually:
+
+* **Strong value:** KJ, K8s, J8s, 55, maybe slow-played sets, maybe 88
+* **Draws:**
+
+  * All spade draws
+  * QT (open-ender)
+  * T9 (open-ender)
+  * Q9 sometimes
+* **Bluffs:** Some hands like Q4s/Q3s, A2–A4 with a spade blocker
+
+So after the turn check-raise, SB is heavily weighted toward:
+
+* Value > draws >> air
+
+### **River (5♣) – SB checks**
+
+This is important.
+
+Hands that BET river for value:
+
+* KJ, K8, J8, 88, and **all full houses**
+  So these are mostly removed.
+
+Hands that CHECK river:
+
+* **Missed draws:**
+
+  * Spades bricked
+  * QT (gutshot) missed
+  * T9 missed
+* **Marginal value / showdown:**
+
+  * Jx
+  * Kx without improvement (pot-control)
+* **Weak value** that fears raise
+* **Air**
+
+SB’s check after a turn check-raise very often means:
+**“I have a draw that missed OR a medium strength hand I don’t want to bet.”**
+
+---
+
+## 4. Pot odds and equity estimate
+
+Hero currently has **A-high**, which almost never wins at showdown versus:
+
+* Any pair
+* Any Jx
+* Any Kx
+* Any 8x
+* Any 5x
+  So our **raw equity if we check is near zero**.
+
+If hero bets, we target:
+
+* Missed **spades**
+* Missed **QT**
+* Missed **T9**
+* Random air floats
+  These make up a large part of SB’s river check range after turn check-raise.
+
+We need our bluff to work > **~33%** if we bet around half pot.
+
+---
+
+## 5. Action reasoning
+
+### **Why checking is bad**
+
+* We virtually never win at showdown.
+* SB has tons of Jx/Kx that beat Ace-high.
+* Equity realization is near zero.
+
+### **Why bluffing is good**
+
+SB’s line = **check flop → check turn → check-raise → check river**
+This is often a missed draw line:
+
+**Hands that fold to a bet:**
+
+* QTs (most combos)
+* T9s
+* Missed spades that didn’t improve
+* Low pairs (22–44)
+* Ace-high hands
+* Some Jx may fold to a large bet because the river paired the board and we represent 5x/sets/boats.
+
+### **Sizing**
+
+To maximize fold equity versus Jx and draws, we need something like:
+
+* **BET 20–28 chips** (55–75% pot)
+
+A small block bet isn’t credible and gets looked up too often by Jx, Kx.
+
+A large bet polarizes us into:
+
+* **Trips / boats** (5x, 55, 88, K5s rarely, A5s)
+* **Strong value like KJ**
+
+SB’s check indicates they are not comfortable with the nut range.
+Thus, a polarizing bet folds out nearly all of SB’s middling hands.
+
+### **Optimal GTO/Exploit mix:**
+
+This is a **good bluff candidate**:
+
+* We hold **A♣**, blocking some Ace-high call-downs
+* We hold **T♣**, blocking T9/T8 that might call small bets
+* Our hand has **zero showdown value**
+
+We prefer to bluff this combo over something like Q4s because A♣T♣ blocks call-down ranges better.
+
+---
+
+## 6. Final decision: **BET 24**
+
+A 24-chip bet (≈ 65% pot) maximizes fold equity, gets folds from all draws and many marginal Jx/Kx hands, and is the optimal bluff frequency from this node.
+
+**Final: BET 24**
+
+
+CoT 2:
+
+Below is the structured reasoning with the **optimal action = CHECK**.
+
+---
+
+### **1. Stage: River**
+
+---
+
+### **2. Known info**
+
+* **Board**: J♠ K♠ 5♦ 8♥ 5♣
+* **Hero hand (BB)**: A♣ T♣
+* **Stacks**: ~100bb effective at start; no all-in action
+* **Positions**: Hero = BB, Villain = SB (opened to 3bb preflop)
+* **Pot**: 38.0 chips
+* **Action**: SB checks to Hero on the river
+
+---
+
+### **3. Opponent range estimate**
+
+**Preflop SB raise** → wide but value-heavy range (all broadways, suited aces, Kx, Qx, mid pairs, suited connectors).
+
+**Flop (SB checks)** → They often pot-control medium pairs, weak Kings, underpairs, or flush draws. Checking range still strong.
+
+**Turn**
+
+* Hero bets 5 into a check-check flop.
+* SB **check-raises** to 16.
+  This is *never* air-heavy. Typical hands:
+* **Strong value**: KJ, KQ, KT, two pair, sets (55), turned 2p with K8s/J8s
+* **Draws**: Q♠T♠, A♠Qx, A♠Tx, T9♠, Q9♠
+* **Occasional semi-bluffs** that missed on river
+
+**River 5♣** pairs the board. SB **checking** river after turn aggression suggests:
+
+* Missed flush draws
+* Marginal made hands that don’t want to bet (Kx, Jx)
+* Pot-control with medium strength, not hands that fear a bet
+
+Most importantly: **Hero has A-high**, no showdown value except versus busted draws.
+
+---
+
+### **4. Pot odds and equity estimate**
+
+If Hero bets:
+
+* Hero is bluffing only
+* Fold equity is unclear because SB check-raises turn = strong range
+* SB has many hands that *won’t fold* to a river stab (Kx, Jx, boats)
+* The few missed draws (spades, QT, Q9, T9) are not enough to justify a profitable bluff.
+
+Hero’s **equity when checked to** = near 0 vs value range
+But the EV of a **check is higher than bluffing** because SB’s continuing range to a bet is too strong.
+
+---
+
+### **5. Action reasoning**
+
+* **Betting is bad**:
+
+  * SB’s range that continues = mostly strong value
+  * You get called extremely often by Kx, Jx, pairs, boats
+  * Only folds come from busted draws (too few combos)
+
+* **Checking is correct**:
+
+  * Hero has A-high → no value bet
+  * Bluffing is −EV against a range that check-raises turn with strong holdings
+  * You realize max EV by taking the free showdown
+
+---
+
+### **6. Final decision: CHECK**
+
+You have no value hand, insufficient fold equity, and SB’s range is too strong to bluff profitably.
+
+
+
+PROMPT 4:
+
+You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips and the big blind is 1 chips. Everyone started with 100 chips.
+The player positions involved in this game are UTG, HJ, CO, BTN, SB, BB.
+In this hand, your position is CO, and your holding is [Ace of Spade and Five of Spade].
+Before the flop, CO raise 2.3 chips, and BB call. Assume that all other players that is not mentioned folded.
+The flop comes Six Of Spade, Eight Of Diamond, and Seven Of Club, then BB check, CO bet 2 chips, BB raise 8 chips, and CO call.
+The turn comes Jack Of Spade, then BB bet 16 chips.
+
+
+Now it is your turn to make a move.
+To remind you, the current pot size is 37.0 chips, and your holding is [Ace of Spade and Five of Spade].
+
+Your optimal action is: call
+
+Explain your reasoning step by step. Format your answer in this structure:
+1. Stage: <Preflop / Flop / Turn / River>
+2. Known info: <board cards, hero hand, stack sizes, position>
+3. Opponent range estimate: <brief logic>
+4. Pot odds and equity estimate: <numbers or qualitative>
+5. Action reasoning: <why fold / call / raise>
+6. Final decision: <FOLD / CHECK / CALL / BET X / RAISE X / ALL IN>
+
+
+CoT 1:
+
+Below is the **step-by-step reasoning** based on standard 6-max NLHE theory and solver-informed heuristics.
+
+---
+
+### **1. Stage:**
+
+**Turn**
+
+---
+
+### **2. Known info:**
+
+* **Board:** 6♠ 8♦ 7♣ — J♠
+* **Hero (CO) hand:** A♠5♠ → **nut-flush draw**, overcard Ace
+* **Positions:** CO vs BB (heads-up)
+* **Stacks:** Started 100bb; after action, effective stack is still deep but BB has bet 16 into 37
+* **Pot:** 37 chips
+* **Action:**
+
+  * Preflop: CO opens 2.3, BB calls
+  * Flop: BB check → Hero 2 → BB raises to 8 → Hero calls
+  * Turn: J♠ completes many flush draws → BB leads 16
+
+---
+
+### **3. Opponent range estimate:**
+
+**BB raise on flop (6♠ 8♦ 7♣)** represents:
+
+* Two-pair: 76, 87, 86
+* Straights: 9T (the nuts), 54
+* Sets: 66, 77, 88
+* Strong top pair + draws: 98, 97, T8
+* Semi-bluffs: hands with T, 9, 5, or spade backdoors
+* Rare air bluffs
+
+**Turn J♠** is extremely good for Hero because:
+
+* Hero now has **nut flush draw**
+* BB’s value range that improved:
+
+  * J8 / J7 sometimes
+* BB’s value range that *declined*:
+
+  * Sets & two-pairs get pressured by spades
+  * Straights are still strong but vulnerable vs flushes
+* BB’s bluffs: many continue (hearts, straight blockers, 9x/Tx)
+
+BB’s lead for **16 into 37** is sized like a value bet trying to deny equity or a semibluff continuing aggression.
+
+Range conclusion: BB has many **strong-but-not-invincible** hands and also **semi-bluffs**. Your A♠5♠ is extremely high-equity.
+
+---
+
+### **4. Pot odds and equity estimate:**
+
+BB bets 16 into 37 → You must call 16 to win **53**.
+
+Pot odds = 16 / 53 ≈ **30%**
+
+Your hand (A♠5♠) equity vs BB’s value-heavy raising + betting range on this turn:
+
+* Against sets/two pair/straights: **30–40%**
+* Against semibluffs: **60–85%**
+* Overall blended equity: **~42–48%**
+
+You clearly have **more equity than your pot odds require**.
+
+---
+
+### **5. Action reasoning:**
+
+You have:
+
+* **Nut flush draw**
+* **Overcard Ace vs pairs/two-pair/low sets**
+* **Good implied odds when you hit**
+* **Blockers:** A♠ reduces villain’s flushes
+* **Position** on river to realize equity and possibly bluff when misses
+
+Options:
+
+#### **FOLD:**
+
+Terrible — you have too much equity and a very strong draw.
+**Not acceptable.**
+
+#### **CALL:**
+
+Strong option because:
+
+* You comfortably realize equity in position
+* You keep bluffs and dominated draws in BB’s range
+* Your value draws don’t want to get 3-bet jammed off equity
+
+#### **RAISE/SEMI-BLUFF JAM (~70bb):**
+
+Theoretically possible but:
+
+* BB’s flop raise + turn lead = value-dense
+* You do not want to isolate against straights/sets when you still need to hit
+* Your hand realizes equity extremely well by calling
+  So jam is **too high-variance and slightly -EV** vs this line in real-world player pools.
+
+**Call is highest EV.**
+
+---
+
+### **6. Final decision:**
+
+### ✅ **CALL**
+
+
+CoT 2:
+
+1. **Stage:** Turn
+
+2. **Known info:**
+
+   * **Board:** 6♠ 8♦ 7♣ | J♠
+   * **Hero hand (CO):** A♠5♠ (nut-flush draw + overcard blocker)
+   * **Pot:** 37 chips
+   * **BB bets:** 16 chips
+   * **Effective stacks:** ~100-(preflop/flop action) → still deep enough for implied odds
+   * **Positions:** CO vs BB heads-up
+
+3. **Opponent range estimate:**
+
+   * After check-raising the flop on **6-7-8**, BB has a polarized range:
+
+     * **Value:** sets (66, 77, 88), straights (T9), two-pairs (76, 86, 87), possibly J8s/J7s turned pair+draw.
+     * **Bluffs/semi-bluffs:** 9x blockers, straight draws, combo draws, random overcards with gutters.
+   * Turn jack completes some top-pair hands but does **not** improve most of BB’s strong flop holdings significantly.
+   * BB still has many missed draws; the J♠ gives Hero *the nut-flush draw*, reducing villain’s flush possibilities.
+
+4. **Pot odds and equity estimate:**
+
+   * Hero must call **16** into a pot that will become
+
+     * 37 + 16 = **53**
+     * Pot odds ≈ 16 / 53 ≈ **30%** needed.
+   * Nut-flush draw with A♠5♠ has:
+
+     * ~9 flush outs + occasional ace outs + backdoor straight-equity → **~30–35% equity** vs a value-heavy range and **higher** vs a mixed/bluffy range.
+   * Implied odds remain strong because villain continues when Hero hits flush.
+
+5. **Action reasoning:**
+
+   * **Folding** is too tight because Hero has the *nut* draw, proper pot odds, and excellent implied odds.
+   * **Raising** is not preferred:
+
+     * Villain’s flop check-raise + turn barrel represents strong made hands; he rarely folds them.
+     * Raising isolates against the strongest part of villain’s range, reducing Hero’s equity realization.
+   * **Calling** leverages position + nut-equity and keeps weaker bluffs in the pot.
+
+6. **Final decision:** **CALL**
+
+
+
+PROMPT 5:
+
+You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips and the big blind is 1 chips. Everyone started with 100 chips.
+The player positions involved in this game are UTG, HJ, CO, BTN, SB, BB.
+In this hand, your position is BB, and your holding is [Ace of Spade and Four of Diamond].
+Before the flop, SB raise 3.0 chips, and BB call. Assume that all other players that is not mentioned folded.
+The flop comes Jack Of Spade, King Of Spade, and Five Of Diamond, then SB check, and BB check.
+The turn comes Eight Of Heart, then SB bet 5 chips, BB raise 16 chips, and SB call.
+The river comes Three Of Club, then SB check.
+
+
+Now it is your turn to make a move.
+To remind you, the current pot size is 38.0 chips, and your holding is [Ace of Spade and Four of Diamond].
+
+Your optimal action is: check
+
+Explain your reasoning step by step. Format your answer in this structure:
+1. Stage: <Preflop / Flop / Turn / River>
+2. Known info: <board cards, hero hand, stack sizes, position>
+3. Opponent range estimate: <brief logic>
+4. Pot odds and equity estimate: <numbers or qualitative>
+5. Action reasoning: <why fold / call / raise>
+6. Final decision: <FOLD / CHECK / CALL / BET X / RAISE X / ALL IN>
+
+
+CoT 1:
+
+Below is the analysis and best action for **the river** decision with **A♠4♦** on **K♠ J♠ 5♦ 8♥ 3♣** after the line taken.
+
+---
+
+## **1. Stage: River**
+
+## **2. Known info**
+
+* **Board:** K♠ J♠ 5♦ 8♥ 3♣
+* **Hero (BB):** A♠ 4♦
+
+  * Holding: Ace-high with **nut-spade blocker**, no made hand
+* **Stacks:** Both players began 100; effective stack still ≈80+ after turn action
+* **Positions:** SB (raiser pre), BB (caller)
+* **Pot:** 38 chips
+* **Action:**
+
+  * Preflop: SB 3 → BB call
+  * Flop: check / check
+  * Turn: SB 5 → BB raise 16 → SB call
+  * River: SB checks → Hero to act
+
+---
+
+## **3. Opponent range estimate**
+
+**SB preflop raising range:** Broadways, suited aces, pairs, suited connectors.
+**Flop check:** Removes strong top-pair+ and strong draws somewhat, but SB can still trap KQ, KJ, some flush draws.
+**Turn:** When SB **bets 5** into 6.5, then **calls your raise**, his range looks like:
+
+* **Made hands:** KQ, KJ, KT, QJ, JTs
+* **Some draws:**
+
+  * Missed spades (A♣Xs, Q♣Xs, low suited spades)
+  * T9 (open-ended)
+* **Weak made hands:** 77–TT sometimes
+* **Strong hands unlikely:** Sets usually 3-bet turn or bet flop
+
+SB’s **check on river** caps him heavily:
+
+* Very unlikely to have 2-pair+, sets, straights
+* Most likely: **weak kings**, **medium Jacks**, **missed draws**
+
+---
+
+## **4. Pot odds and equity estimate**
+
+If we **bluff**, we risk X chips to win **38 chips**.
+Villain’s call range is mostly **Kx and Jx**, which **beat Ace-high**.
+Hero has **A♠**, which is *the* best blocker:
+
+* Blocks SB's nut flushes
+* Reduces combos of A♠X♠ that correctly call
+* Makes SB more weighted toward **medium-strength made hands that fold to large bets**
+
+Optimal bluffing hands here block the nuts and don’t block folds — **A♠4♦ is perfect**.
+
+To be profitable, a bluff needs to work roughly:
+**Risk / (Risk + Reward) = fold % needed**.
+
+If we bet **25 chips**:
+
+* Need them to fold **25 / (25+38) ≈ 40%** of the time.
+  Villain likely folds >50% of capped range.
+
+---
+
+## **5. Action reasoning**
+
+✔ **We should bluff** because:
+
+* We have **A♠**, the best blocker to nut flushes
+* Our hand cannot win at showdown (Ace-high loses to every pair)
+* Our turn raise story (representing strong Kx, sets, or flush draws) is credible
+* Villain capped themselves by checking river
+* Medium Kx and Jx are forced into tough decisions
+* SB has many missed draws that simply fold
+
+✔ **Sizing:**
+We want a **large bluff** that folds out Kx.
+Recommended: **25–32 chips** (⅔–¾ pot).
+All-in is too large and overbluffs in population tendencies; mid–large sizing gets better fold equity.
+
+---
+
+## **6. Final decision: BET 28**
+
+A **28-chip bluff** maximizes fold equity while staying consistent with value sizings.
+
+
+
+CoT 2:
+
+Below is the structured explanation of why **checking** is the optimal action.
+
+---
+
+**1. Stage:**
+**River**
+
+---
+
+**2. Known info:**
+
+* **Board:** K♠ – J♠ – 5♦ – 8♥ – 3♣
+* **Hero Hand (BB):** A♠ 4♦
+* **Effective stacks:** Started 100 chips each; action leaves both with plenty behind.
+* **Positions:** Heads-up SB vs BB
+* **Pot:** 38 chips
+* **Action:** SB checks to you on the river.
+
+---
+
+**3. Opponent range estimate:**
+
+* **Preflop:** SB raised small-blind vs big-blind → wide but stronger than typical open: big cards, broadways, suited connectors, suited Ax, pocket pairs.
+* **Flop:** SB checks on K♠J♠5♦ → many strong hands continue, but SB still can have medium-strength Kx/Jx, Qx with spades, pocket pairs, or give-ups.
+* **Turn:** SB leads 5 → often medium-strength made hands (Kx, Jx, TT–QQ, 8x), some draws.
+* **Call vs your raise:** Calling your turn raise removes most weak hands and enhances hands like Kx, Jx, two pair, combo draws (e.g., Q♠T♠, QTs, T9s, Axs spades).
+* **River check:** After calling the turn raise, villain checks → usually medium-strength showdown hands (Kx, Jx, some pocket pairs, missed spade draws), sometimes trapping but less likely.
+
+---
+
+**4. Pot odds and equity estimate:**
+
+* You hold **A♠ high**, with the **nut spade blocker**, but **no showdown value** vs almost all of SB’s calling range.
+* Bluffing needs to make SB fold enough **Kx/Jx** to be profitable.
+* But SB’s turn call vs your raise means SB’s range is **too strong and too bluff-catcher heavy**, reducing fold equity significantly.
+
+---
+
+**5. Action reasoning:**
+
+* **Value betting is impossible:** A-high has zero value.
+* **Bluffing is poor:**
+
+  * Your turn raise polarizes you, so your river shove represents strong hands—but your actual line is still under-bluffed in practice.
+  * SB’s range is capped but **too sticky** with Kx/Jx that called the turn raise.
+  * Your blocker (A♠) removes many of SB’s missed spade draws—the *hands you want villain to have* when bluffing.
+  * Hence bluffing becomes **worse**, because you reduce the probability SB holds foldable draws.
+* **Checking is optimal:**
+
+  * You have some showdown value? Very little, but betting likely loses more.
+  * You avoid torching chips into a range that is calling too often.
+
+---
+
+**6. Final decision:**
+**CHECK**
+
+
+
+PROMPT 6:
+
+You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips and the big blind is 1 chips. Everyone started with 100 chips.
+The player positions involved in this game are UTG, HJ, CO, BTN, SB, BB.
+In this hand, your position is CO, and your holding is [Jack of Spade and Eight of Spade].
+Before the flop, CO raise 2.3 chips, and BB call. Assume that all other players that is not mentioned folded.
+The flop comes King Of Spade, Seven Of Heart, and Two Of Diamond, then BB check, and CO check.
+The turn comes Six Of Heart, then BB check, CO bet 4 chips, and BB raise 13 chips.
+
+
+Now it is your turn to make a move.
+To remind you, the current pot size is 22.0 chips, and your holding is [Jack of Spade and Eight of Spade].
+
+Your optimal action is: fold
+
+Explain your reasoning step by step. Format your answer in this structure:
+1. Stage: <Preflop / Flop / Turn / River>
+2. Known info: <board cards, hero hand, stack sizes, position>
+3. Opponent range estimate: <brief logic>
+4. Pot odds and equity estimate: <numbers or qualitative>
+5. Action reasoning: <why fold / call / raise>
+6. Final decision: <FOLD / CHECK / CALL / BET X / RAISE X / ALL IN>
+
+
+CoT 1:
+
+Below is a clear, complete, solver-inspired analysis of this turn situation.
+
+---
+
+## **1. Stage:**
+
+**Turn**
+
+## **2. Known info:**
+
+* **Board:** K♠ 7♥ 2♦ 6♥
+* **Hero (CO):** J♠ 8♠
+* **Stacks:** Both effectively ~100 chips at start; pot is **22 chips** after BB raises to 13 over your 4.
+* **Positions:** CO opens 2.3, BB calls. Flop goes check–check. Turn BB checks, CO bets 4, BB raises to 13.
+
+## **3. Opponent range estimate:**
+
+BB check-raising this turn after flop check-check is **value-heavy and semi-bluff–polarized**.
+
+**BB likely value hands:**
+
+* **Two pair:** 76s, K7s (rare), possibly K6s
+* **Sets:** 77, 66, 22
+* **Strong Kx:** KQ/KJ maybe slow-played but less common after flop check
+* **Straights:** 89 gets there (open-ended on turn)
+
+**BB likely bluff/semi-bluff hands:**
+
+* Heart draws: A♥X♥, Q♥J♥, Q♥T♥, J♥T♥, T♥9♥, etc.
+* Gutshots/pair+draw: 5x heart draws, 8x hearts, 9x hands
+* Some occasional air check-raise as turn stab vs CO delayed c-bet
+
+**Your hand J♠8♠:**
+
+* Has **no pair**, **no flush draw**, **only a gutshot** (needs a 9).
+* Backdoor spades missed and are now mostly irrelevant except the J♠ blocker to nut flush draws (minor).
+
+This hand is **extremely low in your range** in this node.
+
+## **4. Pot odds and equity estimate:**
+
+You must call **9 chips** (BB made it 13, you already put in 4).
+Pot after you call will be:
+22 + 9 = **31 chips**.
+
+**Pot odds:**
+9 to win 31 → **29% equity required**.
+
+**Your actual equity:**
+
+* Gutshot only: **~8–10%** vs value range
+* Even vs semi-bluffing range, you rarely exceed **20%**, often less.
+* You are thoroughly crushed by value, and even when ahead, many semi-bluffs have 12–15 outs.
+
+You do **not** meet required equity.
+
+## **5. Action reasoning:**
+
+Calling is bad for several reasons:
+
+* You have **insufficient equity**.
+* Implied odds are zero or negative: even if you hit a 9, it puts **4-to-a-straight** on board and is obvious; BB won’t pay you, or you might be dominated by 9x straights.
+* You have **no showdown value**.
+* Raising is suicidal: BB never folds his value and rarely folds strong draws.
+
+This is one of the easiest folds in your entire CO turn betting range.
+
+## **6. Final decision:**
+
+### **FOLD**
+
+
+CoT 2:
+
+Below is the structured reasoning for why **folding** is optimal.
+
+---
+
+**1. Stage:**
+**Turn**
+
+---
+
+**2. Known info:**
+
+* **Board:** K♠ – 7♥ – 2♦ – 6♥
+* **Hero Hand (CO):** J♠ 8♠
+* **Stack sizes:** ~100 chips effective
+* **Positions:** CO (raiser) vs BB (caller)
+* **Pot before turn decision:** 22 chips
+* **Action:**
+
+  * Flop: CO checks back.
+  * Turn: BB checks, CO bets 4, BB check-raises to 13.
+
+---
+
+**3. Opponent range estimate:**
+
+* **Preflop BB call range:** Broadways, suited connectors, suited Ax, pocket pairs, many suited hands.
+* **Flop BB check → reasonable with entire range.**
+* **Turn BB check-raise after CO bets:**
+
+  * Strong Kx (KQ, KJ, maybe KT)
+  * Sets: 77, 66, 22 (all possible)
+  * Two pairs: 76s
+  * Strong draws: 9♥8♥, 8♥5♥, 5♥4♥, A♥x♥ (but fewer since hero blocks 8).
+  * Occasional bluffs, but population tendency is **value-heavy** in this line after CO checks flop and bets turn.
+
+Given CO checked the flop, BB perceives CO’s range as capped, strengthening the incentive for BB to raise for value.
+
+---
+
+**4. Pot odds and equity estimate:**
+
+* Cost to call: **9 chips** (13 - 4).
+* Pot after call: 22 + 9 = 31 chips → **risking 9 to win 31**, requiring roughly **29% equity**.
+* J♠8♠ on K♠–7♥–2♦–6♥ has:
+
+  * **No pair**
+  * **Backdoor spade flush draw missed**
+  * **Weak gutshot (to 9)** only
+* Even versus BB’s bluffs + semi-bluffs, equity is far below required.
+* Versus value-heavy ranges (likely here), equity is **near zero**.
+
+---
+
+**5. Action reasoning:**
+
+* **Calling:** Too optimistic; insufficient equity versus a much stronger, polarized turn check-raise range.
+* **Raising:** Impossible—hand has no showdown value and no fold equity versus strong made hands in BB’s line.
+* **Folding:** Correct, because the hand has almost no equity and is crushed by most of villain’s range.
+
+---
+
+**6. Final decision:**
+**FOLD**
+
+
+
+PROMPT 7:
+
+You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips and the big blind is 1 chips. Everyone started with 100 chips.
+The player positions involved in this game are UTG, HJ, CO, BTN, SB, BB.
+In this hand, your position is BB, and your holding is [Seven of Heart and Seven of Club].
+Before the flop, BTN raise 2.5 chips, and BB call. Assume that all other players that is not mentioned folded.
+The flop comes Jack Of Spade, King Of Spade, and Five Of Diamond, then BB check, BTN bet 4 chips, and BB call.
+The turn comes Jack Of Diamond, then BB check, and BTN bet 10 chips.
+
+
+Now it is your turn to make a move.
+To remind you, the current pot size is 23.0 chips, and your holding is [Seven of Heart and Seven of Club].
+
+Your optimal action is: fold
+
+Explain your reasoning step by step. Format your answer in this structure:
+1. Stage: <Preflop / Flop / Turn / River>
+2. Known info: <board cards, hero hand, stack sizes, position>
+3. Opponent range estimate: <brief logic>
+4. Pot odds and equity estimate: <numbers or qualitative>
+5. Action reasoning: <why fold / call / raise>
+6. Final decision: <FOLD / CHECK / CALL / BET X / RAISE X / ALL IN>
+
+
+CoT 1:
+
+Below is a **step-by-step, strategically sound breakdown** of this **turn decision** with pocket 77 on **J♠ K♠ 5♦ | J♦** after facing BTN’s second barrel:
+
+---
+
+## **1. Stage:**
+
+**Turn**
+
+---
+
+## **2. Known info:**
+
+* **Board:** J♠ K♠ 5♦ | J♦
+* **Hero hand:** 7♥ 7♣
+* **Hero position:** **BB**
+* **Villain position:** **BTN (opened 2.5bb preflop)**
+* **Stacks:** ≈100bb effective
+* **Pot:** **23 chips**
+* **BTN bets 10 chips** when checked to.
+
+---
+
+## **3. Opponent range estimate:**
+
+BTN open → wide: ~45–55%
+Flop c-bet on KJ5ss → continues with:
+
+* **Value:** KQ, KJ, KT, QJ, JT, JJ, 55, AA, QQ, maybe some strong Kx
+* **Bluffs:** A♠Qx, A♠Tx, Q♠Tx, T9♠, 98♠, AQ no spade, QT no spade
+  Turn card = **J♦** (pairs second card):
+* Strengthens BTN’s **Jx portion** (JTs/JQo).
+* BTN still barrels:
+
+  * Value: Kx, Jx, QQ+, AA
+  * Bluffs: good backdoor spade draws, AQ, QT
+
+Our 77 beats only pure bluffs (AQ no spade, random QTs, occasional air), but loses to **every value hand**.
+
+BTN’s second barrel frequency on this pairing, unchanging brick is quite high—but so is his value density.
+
+---
+
+## **4. Pot odds and equity estimate:**
+
+BTN bet = **10** into **23**
+Call = 10 to win **33** → need **~30%** equity to continue.
+
+**Do we have ~30% vs BTN’s turn barrel range?**
+No. 77 has:
+
+* **Terrible equity vs made hands**
+* **No backdoor flush draw**
+* **Two outs to improve** (to 7, but 7 often still loses to Kx / Jx boats)
+
+Realistic equity vs a reasonable turn bet range ≈ **10–18%**, depending on how bluff-heavy BTN is.
+
+Not enough.
+
+---
+
+## **5. Action reasoning:**
+
+Calling is poor because:
+
+* **We almost never win at showdown**
+* **We have almost no improvement outs**
+* **River bluff opportunities are minimal**
+* BTN’s value region crushes us
+* BTN has natural bluffs — but not enough to justify continuing
+
+Raising is even worse:
+
+* Villain folds all air but **never folds value**
+* We have zero blockers to Kx, Jx, or spades
+
+This is a clear **mandatory fold** in standard GTO and exploitative play.
+
+---
+
+## **6. Final decision:**
+
+### **FOLD**
+
+
+CoT 2:
+
+Below is the structured explanation for why **folding** is the optimal decision.
+
+---
+
+**1. Stage:**
+**Turn**
+
+---
+
+**2. Known info:**
+
+* **Board:** K♠ – J♠ – 5♦ – J♦
+* **Hero Hand (BB):** 7♥ 7♣
+* **Pot:** 23 chips
+* **Stacks:** ~100 chips effective
+* **Positions:** BTN (raiser) vs BB (caller)
+* **Action:**
+
+  * Preflop: BTN raises 2.5, BB calls
+  * Flop: BB checks, BTN bets 4, BB calls
+  * Turn: BB checks, BTN bets 10
+
+---
+
+**3. Opponent range estimate:**
+BTN’s preflop opening range is wide but strong:
+
+* Broadways (KQ, KJ, KT, QJ, QT)
+* Ax, suited connectors, pocket pairs, strong suited hands
+
+**Flop c-bet** on K♠J♠5♦ is standard; BTN continues with:
+
+* Top pairs (Kx), second pair (Jx), overpairs (QQ+), flush draws, straight draws, air.
+
+**Turn card J♦ pairs the board**, heavily improving BTN’s range:
+
+* Jx now becomes **trips**
+* KJ, JT improve to **boats**
+* Overpairs (QQ, AA) still value bet
+* Strong Kx continue
+* Bluffs decline dramatically on paired boards
+
+BTN’s **turn bet of 10** into 23 after you call flop indicates a range heavily weighted to **value**: trips, strong Kx, overpairs, and some flush draws.
+
+---
+
+**4. Pot odds and equity estimate:**
+
+* You must call 10 to win 33 → requires **≈30% equity**.
+* Pocket 77 on KJ5J has:
+
+  * No redraws
+  * No overcard that can improve you
+  * Almost never ahead of BTN’s value range
+* Against a realistic BTN turn betting range, your equity is **far below 30%**.
+
+---
+
+**5. Action reasoning:**
+
+* **Calling is poor:**
+
+  * Your hand is a pure bluff-catcher with almost no equity when behind.
+  * BTN’s range is too value-heavy on a paired, high-card board.
+  * Many rivers will force you to fold anyway.
+* **Raising is worse:**
+
+  * You cannot credibly represent many strong hands after only calling flop from BB.
+  * BTN will not fold trips, Kx, or overpairs.
+* **Folding is correct:**
+
+  * You are crushed by BTN’s value range.
+  * Insufficient pot odds.
+  * No good turn/river runouts for 77.
+
+---
+
+**6. Final decision:**
+**FOLD**
+
+
+
+PROMPT 8:
+
+You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips and the big blind is 1 chips. Everyone started with 100 chips.
+The player positions involved in this game are UTG, HJ, CO, BTN, SB, BB.
+In this hand, your position is BTN, and your holding is [King of Diamond and Ten of Heart].
+Before the flop, BTN raise 2.5 chips, and BB call. Assume that all other players that is not mentioned folded.
+The flop comes Ace Of Diamond, Eight Of Diamond, and Three Of Diamond, then BB check, and BTN check.
+The turn comes Nine Of Diamond, then BB check, and BTN check.
+The river comes Ten Of Diamond, then BB bet 3 chips.
+
+
+Now it is your turn to make a move.
+To remind you, the current pot size is 8.0 chips, and your holding is [King of Diamond and Ten of Heart].
+
+Your optimal action is: raise 10
+
+Explain your reasoning step by step. Format your answer in this structure:
+1. Stage: <Preflop / Flop / Turn / River>
+2. Known info: <board cards, hero hand, stack sizes, position>
+3. Opponent range estimate: <brief logic>
+4. Pot odds and equity estimate: <numbers or qualitative>
+5. Action reasoning: <why fold / call / raise>
+6. Final decision: <FOLD / CHECK / CALL / BET X / RAISE X / ALL IN>
+
+
+CoT 1:
+
+Below is a correct, step-by-step strategic analysis for this *river* decision.
+
+---
+
+## **1. Stage: River**
+
+## **2. Known info**
+
+* **Board:** A♦ 8♦ 3♦ | 9♦ | T♦
+  → Board is **five diamonds**.
+* **Hero (BTN):** K♦ T♥
+  → Hero has the **second-nut flush** (only Q♦ beats us).
+* **Pot:** 8.0 chips before BB’s river bet.
+* **BB bets:** 3 chips into 8.
+* **Stacks:** Both started 100, no significant previous investment beyond the described betting.
+
+## **3. Opponent range estimate**
+
+BB:
+
+* Called BTN open preflop → wide but not trash: suited connectors, suited Ax, broadways, pocket pairs.
+* Flop check, turn check on a 4-diamond board → BB often **does not have a big diamond**, because players usually donk or probe with strong flushes or at least Q♦-x, J♦-x, etc.
+* River small bet (3 into 8) after hero checked twice → represents:
+
+  * **Thin value:** medium diamonds (6♦–J♦), maybe A♣x♣ with a diamond blocker (unlikely).
+  * **Block bet / protection:** Sets or two pairs that now want to set their own price.
+  * **Bluffs:** Without a diamond trying to fold out hero’s non-diamond pairs (Kx, 9x, TT without a diamond, etc.)
+
+Hands beating us: **only Q♦x**.
+Hands we beat: **all weaker diamonds, all bluffs, all block bets.**
+
+Q♦ combos BB can have:
+
+* Q♦Jx, Q♦Tx (but T♦ is on board), Q♦9x plus others.
+* Many Q♦ combos are discounted because BB did not probe turn (strong Q♦ often bets).
+
+## **4. Pot odds and equity estimate**
+
+BB bet = 3
+Pot after bet = 11
+Call cost = 3 → We need **~27%** equity.
+
+We have **second-nut flush**, and villain has very few Q♦ combos compared to many worse diamonds and bluffs.
+
+Our equity versus BB’s range is **very high**—well above the ~73% villain needs to make us fold incorrectly.
+
+Additionally:
+
+* Raising is questionable because only Q♦ continues and everything worse folds, so raise ≠ value.
+
+## **5. Action reasoning**
+
+* **Folding** is far too tight with second-nut flush for only 3 into 8.
+* **Raising** is bad—only better calls, worse folds.
+* **Calling** is optimal: we win extremely often, BB rarely has Q♦, and our hand is strong but not strong enough to extract value via raise on a monotone board.
+
+## **6. Final decision: CALL**
+
+We comfortably call the small river bet with the second-nut flush.
+
+
+CoT 2:
+
+1. **Stage:** River
+
+2. **Known info:**
+
+   * **Board:** A♦–8♦–3♦–9♦–T♦
+   * **Hero hand (BTN):** K♦ T♥
+   * **Stacks:** ~100 chips effective (deep; SPR small now)
+   * **Positions:** BTN vs BB, heads-up pot
+   * **Pot:** 8 chips before river bet
+   * **Action:** BB bets 3 chips into 8
+
+3. **Opponent range estimate:**
+
+   * **BB preflop call range:** Broadways, suited connectors, suited aces, some pocket pairs.
+   * **Flop/turn checks:** Removes many strong made hands that would usually bet to protect (non-diamond sets, two pairs).
+   * **River lead for 3 chips:** This looks like a *thin value bet* with weak diamonds (e.g., Q♦x, J♦x, 7♦6, etc.) or a *blocker bet* with a hand afraid of the flush completing.
+   * **Hands beating hero:** Q♦x, J♦x, any better diamond.
+   * **Hands hero beats:** All single-diamond worse flushes (very few), all non-diamond hands bluffing/blocking.
+
+4. **Pot odds and equity estimate:**
+
+   * Pot after bet = 11 chips.
+   * Calling 3 → needs ~27% equity.
+   * **Hero’s K♦ gives the second-nut flush**, losing only to Q♦x.
+   * Villain has very few Q♦ combos after checking flop/turn.
+   * Overall equity vs range is extremely high → calling is trivial; value-raising is profitable.
+
+5. **Action reasoning:**
+
+   * You hold the **second-nut flush**, extremely under-repped because you checked flop and turn.
+   * BB’s sizing is small and capped; they rarely have Q♦ because those hands often bet earlier or bet larger on river.
+   * Raising extracts value from:
+
+     * J♦x, T♦x, 9♦x, 8♦x
+     * Possibly stubborn A♦x or sets looking to “pay off” small raises
+   * Raise size must target bluff-catchers and weak flushes → **10 chips** is a good thin-value size without polarizing too hard.
+
+6. **Final decision:** **RAISE 10**
+
+
+PROMPT 9:
+
+You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips and the big blind is 1 chips. Everyone started with 100 chips.
+The player positions involved in this game are UTG, HJ, CO, BTN, SB, BB.
+In this hand, your position is BB, and your holding is [Four of Diamond and Four of Club].
+Before the flop, CO raise 2.3 chips, and BB call. Assume that all other players that is not mentioned folded.
+The flop comes Five Of Club, Two Of Diamond, and Three Of Heart, then BB check, and CO check.
+The turn comes Ace Of Diamond, then BB bet 6 chips, and CO call.
+The river comes Ten Of Diamond, then BB check, and CO bet 13 chips.
+
+
+Now it is your turn to make a move.
+To remind you, the current pot size is 30.0 chips, and your holding is [Four of Diamond and Four of Club].
+
+Your optimal action is: call
+
+Explain your reasoning step by step. Format your answer in this structure:
+1. Stage: <Preflop / Flop / Turn / River>
+2. Known info: <board cards, hero hand, stack sizes, position>
+3. Opponent range estimate: <brief logic>
+4. Pot odds and equity estimate: <numbers or qualitative>
+5. Action reasoning: <why fold / call / raise>
+6. Final decision: <FOLD / CHECK / CALL / BET X / RAISE X / ALL IN>
+
+
+CoT 1:
+
+Below is the full reasoning process **following your required structure**.
+(As always, this is *strategic reasoning*, not live-solver output.)
+
+---
+
+## 1. **Stage:** River
+
+## 2. **Known info**
+
+* **Board:** 5♣ 2♦ 3♥ | A♦ | T♦
+* **Hero (BB):** 4♦4♣
+* **Villain (CO):** Raised preflop to 2.3, checked back flop, called turn 6, bet 13 on river.
+* **Effective stacks:** ~100bb start, you’ve used 8.3 + turn 6, still deep enough for decision.
+* **Pot:** 30 chips
+* **River action:** You check, CO bets 13.
+
+## 3. **Opponent range estimate**
+
+**CO preflop open range (6-max CO):** ~28–32%: all broadways, suited aces, most suited connectors, pairs 22+, many offsuit AX.
+
+**Flop (5♣2♦3♥, CO checks back):**
+
+* Strong hands that check some %: A5s, 66–TT sometimes, slowplays like 44? Rare.
+* Medium hands that check: A-high, KQ/KJ/QJ, 66–99 majority, 77–QQ sometimes.
+* Weak hands: suited connectors that whiff (76s, 87s, 98s, QTs, JTs).
+* **Straights (A4, 64s)** mostly bet flop or turn? A4 sometimes checks flop. 64s often checks.
+
+**Turn (A♦, Hero bets 6, CO calls):**
+A big filtering point. Villain continues with:
+
+* **Ax**: A2–AT, AQ, AK
+* **Diamonds:** K♦X♦, Q♦X♦, J♦X♦, T♦X♦, even 7♦6♦, etc.
+* **Sets:** 55, 33, 22
+* **Straights:** A4 suited
+* **Pair + draw:** 4x♦, 6x♦
+* **Underpairs:** rarely continue; 66–88 call sometimes but less common.
+
+**River (T♦):** Front-door diamonds complete. Wheel draws remain relevant.
+
+Villain bets 13 into 30. Value betting range likely includes:
+
+* **Flushes** (any diamonds)
+* **Straights** (A4, 64)
+* **Two pair+** (A5s, A3, A2)
+* **Some Ax bluff-catch → but these typically check; value betting thin with AT is possible**
+
+Bluff candidates:
+
+* Some missed straight blockers without diamonds (4x non-diamond, 6x no diamond)
+* KQ/KJ with a diamond blocker? But diamonds hit, so bluff frequency decreases
+* This runout reduces bluffs substantially.
+
+## 4. **Pot odds and equity estimate**
+
+Villain bets **13 into 30**, giving:
+
+* **Pot odds = 13 / (30 + 13) = 13 / 43 ≈ 30%**
+
+To call, 44 needs **≥ 30% equity** versus his betting range.
+
+But 44:
+
+* Loses to all Ax (which is abundant after turn call)
+* Loses to all flushes
+* Loses to all sets
+* Loses to straights
+* Beats only pure air bluffs (very few)
+* *Unblocks* missed broadway bluffs? True, but diamonds completing kills those bluff attempts.
+
+Realistically your equity is maybe **<10%**, nowhere near required.
+
+## 5. **Action reasoning**
+
+**Calling is bad**: You are crushed by all value, and villain’s bluffing frequency should be very low because the ♦ completes, the A improves his range, and your line is weak-your-hand-range is mostly medium-strength one-pair / weak pairs that he can target for folds.
+
+**Raising is absurd**: You cannot credibly rep many flushes after check on river; you would mostly bet flushes for value. A check-raise bluff is too thin and unnecessary.
+
+**Folding** is the dominant play. You have one of the worst hands you can arrive here with; 44 is now just a weak pair with the 4♦ reducing his chance of holding some bluffing diamonds.
+
+## 6. **Final decision: FOLD**
+
+
+CoT 2:
+
+Below is the analysis structured exactly as requested:
+
+---
+
+1. **Stage:** River
+
+2. **Known info:**
+
+   * **Board:** 5♣ 2♦ 3♥ A♦ T♦
+   * **Hero hand:** 4♦ 4♣ (a turned straight, 5-high, with the 4♦ blocking diamond flushes)
+   * **Effective stacks:** ~100 chips start; pot is **30** on river
+   * **Positions:** Hero = BB, Villain = CO (preflop raiser)
+
+3. **Opponent range estimate:**
+
+   * **Preflop raise (CO):** Broadways, suited Ax, pocket pairs, suited connectors.
+   * **Flop check-back:** Removes strong Ax, strong overpairs; weights toward SDV hands (66–TT), some A-high floats, some diamonds.
+   * **Turn call vs 6-chip donk:** Continues with Ax that checked flop, pairs + draws, diamond draws, 4x straights (rare), and pocket pairs with a diamond.
+   * **River bet (13 into 30):** Value = flushes, A-T/A-x, sets/2p (rare), straights with 4x (but many 4x fold pre). Bluffs = missed broadways without diamonds, 6x-4x without flush, QJ/QK with diamond blocker, etc.
+
+4. **Pot odds and equity estimate:**
+
+   * Hero must call **13** to win **43**, so needs **~30%** equity.
+   * Hero holds a straight and **4♦**, blocking many flush combos (A4♦, 64♦, 74♦, K4♦, Q4♦, J4♦, 94♦, 84♦, 74♦).
+   * Villain’s value range is narrow because many Ax or flushes bet earlier or raise turn.
+   * Bluff frequency on this runout is high: missed broadways, non-diamond 6x, hands that checked flop and floated turn.
+
+5. **Action reasoning:**
+
+   * Your hand is near the **top of your check-call range**.
+   * You block many flushes, and villain arrives at river with **plenty of missed draws**.
+   * Folding a straight requiring only ~30% equity is too tight; raising is bad because you get called only by better hands.
+   * **Call** captures value from bluffs while avoiding overplaying your hand vs flushes.
+
+6. **Final decision:** **CALL**
+
+---
+
+
+PROMPT 10:
+
+You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips and the big blind is 1 chips. Everyone started with 100 chips.
+The player positions involved in this game are UTG, HJ, CO, BTN, SB, BB.
+In this hand, your position is HJ, and your holding is [King of Diamond and Jack of Diamond].
+Before the flop, HJ raise 2.0 chips, and BTN call. Assume that all other players that is not mentioned folded.
+The flop comes Ace Of Diamond, Nine Of Heart, and Eight Of Heart, then HJ check, BTN bet 4 chips, and HJ call.
+The turn comes Three Of Spade, then HJ check, and BTN check.
+The river comes Two Of Heart, then HJ check, and BTN bet 10 chips.
+
+
+Now it is your turn to make a move.
+To remind you, the current pot size is 23.0 chips, and your holding is [King of Diamond and Jack of Diamond].
+
+Your optimal action is: fold
+
+Explain your reasoning step by step. Format your answer in this structure:
+1. Stage: <Preflop / Flop / Turn / River>
+2. Known info: <board cards, hero hand, stack sizes, position>
+3. Opponent range estimate: <brief logic>
+4. Pot odds and equity estimate: <numbers or qualitative>
+5. Action reasoning: <why fold / call / raise>
+6. Final decision: <FOLD / CHECK / CALL / BET X / RAISE X / ALL IN>
+
+
+CoT 1:
+
+Got it! Let’s break this hand down step by step and carefully reason through the river decision.
+
+---
+
+### 1. Stage: **River**
+
+### 2. Known info:
+
+* **Board:** A♦ 9♥ 8♥ 3♠ 2♥
+* **Hero hand (HJ):** K♦ J♦
+* **Stacks:** ~90 chips remaining for both players (rough estimate; ~100 - preflop raise - flop call - river action)
+* **Position:** HJ (Hero) vs BTN (opponent)
+
+---
+
+### 3. Opponent range estimate:
+
+* BTN **called a preflop raise** from HJ and saw the flop A♦ 9♥ 8♥.
+* On the **flop**, BTN **bet 4 into 7** (HJ opened 2, BTN called, pot 7): likely c-bet with top pair, overpair, draw, or a continuation bet with weaker holdings.
+* On the **turn 3♠**, BTN **checked behind**: this is often a sign of **missed draws, marginal hands, or slow-playing a strong hand**. Strong top pair likely would still bet, though some may check back.
+* On the **river 2♥**, BTN **bets 10 into 23** (~43% of pot): could be value betting top pair, bluffing missed draws (flush draws or straight draws), or even thin value with weak Ace or 9.
+
+**Reasonable BTN range on river:**
+
+* **Strong hands:** A9, A8, AT, AJ, KQ, AQ (top pair with kicker), sets (unlikely given board and preflop play)
+* **Bluffs:** missed flush draws (hearts), missed straight draws (T-J), random air.
+
+---
+
+### 4. Pot odds and equity estimate:
+
+* **Pot size:** 23 chips
+* **Opponent bet:** 10 chips
+* **Call cost:** 10 chips → **pot odds ≈ 10 / (23+10) = 10/33 ≈ 30%**
+
+**Equity estimate:**
+
+* Hero has K♦ J♦ → only a king-high hand with potential backdoor diamond flush possibilities (but flush missed).
+* The board is **A-high**, so Hero **does not beat any Ace** and does not beat any set.
+* Hero **beats some missed draws** (hearts flush draw, straight draw combos).
+
+Rough equity: very low, maybe **~20–25%** depending on BTN bluff frequency. Pot odds are slightly better (~30%), but barely.
+
+---
+
+### 5. Action reasoning:
+
+* Hero **does not have showdown value** against any Ace or better hand.
+* Hero **beats only bluffs or very specific missed draws**.
+* BTN’s line (flop bet, turn check, river bet) is consistent with **value hands** and some **bluffs**, but the majority of BTN’s range likely **beats KJ**.
+* **Pot odds slightly favor a call** if BTN is bluffing frequently (~30% of the time), but given standard 6-max NLHE strategy, BTN’s range is **weighted toward value here**, so call is a **slight leak**.
+* **Raise or all-in:** Would be a pure bluff, but a huge risk given the line and board texture. Not recommended unless BTN is extremely passive and prone to folding Ace-high.
+
+---
+
+### 6. Final decision: **FOLD**
+
+**Rationale:** Hero has very weak showdown value, the opponent’s river bet likely represents hands that beat KJ, and calling only works if BTN is bluffing at an unusually high frequency. Raising would be an over-bluff with very little fold equity.
+
+---
+
+If you want, I can also calculate a **bluff-catch threshold** and show **exact odds when calling might be profitable** against various opponent tendencies. That way you’ll know if there’s any scenario where a call would make sense. Do you want me to do that?
+
+
+CoT 2:
+
+Here’s a detailed analysis of the hand using your requested structure:
+
+---
+
+1. **Stage:** River
+
+2. **Known info:**
+
+   * **Board:** A♦ 9♥ 8♥ 3♠ 2♥
+   * **Hero hand:** K♦ J♦ (high card king, backdoor diamond draw that missed)
+   * **Pot size:** 23 chips
+   * **Positions:** Hero = HJ, Villain = BTN
+   * **Stack sizes:** ~100 chips each
+
+3. **Opponent range estimate:**
+
+   * **Preflop BTN call vs HJ open:** Likely includes suited connectors, broadway hands, some mid pairs, suited aces.
+   * **Flop c-bet (4 into 7.0 pot including blinds):** Shows top pair (Axx), overpairs (99-AA), flush draws (Hearts), straight draws (T-J-Q) or semi-bluffs with backdoor draws.
+   * **Turn check-back (3♠):** Weakens many bluffs; strong hands slow-play some Ax, sets, or 2-pair.
+   * **River bet (10 into 23):** Polarized to value (Ax, sets, two-pair, completed straights, flushes) and missed bluffs (missed hearts or broadway combos).
+
+4. **Pot odds and equity estimate:**
+
+   * Hero must call **10** to win **33**, requiring ~30% equity.
+   * Hero holds K♦ J♦ with no pair; only king-high and backdoor diamonds.
+   * Villain’s river bet range is likely dominated by hands that beat king-high (Aces, sets, flushes, straights).
+   * Hero’s equity is effectively near 0% vs value range; only beats pure missed bluffs like QJ/QT hearts, which are not very frequent.
+
+5. **Action reasoning:**
+
+   * Hero has no made hand or reliable bluff-catchers.
+   * Calling would lose to nearly all value hands and only beat rare missed bluffs.
+   * Raising would not credibly fold any better hands and overcommits with air.
+   * Folding conserves chips for better spots.
+
+6. **Final decision:** **FOLD**
+
+---
+
+This river is a textbook case of a missed straight/flush draw with only high card value; folding is clearly optimal.
+
+
+
+PROMPT 11:
+
+You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips and the big blind is 1 chips. Everyone started with 100 chips.
+The player positions involved in this game are UTG, HJ, CO, BTN, SB, BB.
+In this hand, your position is SB, and your holding is [Ace of Club and King of Heart].
+Before the flop, UTG raise 2.0, BTN call, SB call, BB raise 14.0, UTG fold, and BTN call. Assume that all other players that is not mentioned folded.
+
+Now it is your turn to make a move.
+To remind you, the current pot size is 32.0 chips, and your holding is [Ace of Club and King of Heart].
+
+Your optimal action is: fold
+
+Explain your reasoning step by step. Format your answer in this structure:
+1. Stage: <Preflop / Flop / Turn / River>
+2. Known info: <board cards, hero hand, stack sizes, position>
+3. Opponent range estimate: <brief logic>
+4. Pot odds and equity estimate: <numbers or qualitative>
+5. Action reasoning: <why fold / call / raise>
+6. Final decision: <FOLD / CHECK / CALL / BET X / RAISE X / ALL IN>
+
+
+CoT 1:
+
+Let’s carefully analyze this preflop scenario.
+
+---
+
+### 1. Stage: **Preflop**
+
+### 2. Known info:
+
+* **Hero (SB) hand:** A♣ K♥
+
+* **Position:** Small Blind
+
+* **Stack sizes:** ~100 chips each (minus small preflop action, ~85–90 remaining)
+
+* **Action so far:**
+
+  * UTG raises 2 → standard open
+  * BTN calls → speculative or strong hand
+  * SB (Hero) calls 2 with A♣ K♥ → strong hand, good for 3-bet
+  * BB 4-bets 14 → very strong hand (AA, KK, QQ, AK suited/off, maybe bluffs in rare spots)
+  * UTG folds
+  * BTN calls 14 → likely strong hand but sometimes suited connectors or AK
+
+* **Current pot size:** 32 chips (2 + 2 + 2 + 14 + 12?) – fits roughly
+
+---
+
+### 3. Opponent range estimate:
+
+* **BB 4-bet:** Range is **very strong**, likely **premium hands only**: AA, KK, QQ, AK (suited more often), maybe rare bluffs or AQs.
+
+* **BTN calling 4-bet:** Likely **AK, AQ, medium pairs, maybe suited connectors**, but range is **tight**, because calling 4-bet from SB and BB is expensive.
+
+* **Hero (SB) with A♣ K♥:** Strong hand but **dominated by AA, KK**, and possibly even AK if BB 4-bet is AK.
+
+---
+
+### 4. Pot odds and equity estimate:
+
+* **Pot:** 32 chips
+* **Cost to call:** ~12–14 chips to match BB’s 4-bet? (Assume ~14) → pot odds ≈ 14 / (32+14) = 14 / 46 ≈ 30%
+
+**Equity vs ranges:**
+
+* Against BB’s 4-bet range of **AA, KK, QQ, AK**, Hero has:
+
+  * vs AA → ~30%
+  * vs KK → ~30%
+  * vs QQ → ~60%
+  * vs AK → ~50/50
+
+* Considering weighted ranges, Hero’s **equity is ~35–40%**, slightly above pot odds.
+
+* **Stack to pot ratio (SPR)** is low (~85–32 = 53 left) → all-in becomes more viable
+
+---
+
+### 5. Action reasoning:
+
+* **Folding:** Would avoid facing dominated hands, but we have a strong hand (AK) that is ahead of many hands BB could 4-bet with. Folding is too tight here.
+* **Calling:** Could see a flop, but with deep stacks, we might be out of position and behind if BB has AA or KK. Equity is roughly equal to pot odds, so marginal.
+* **5-bet / All-in:** This is a common play with **AK suited/off suited in 6-max**, especially against aggressive BB who 4-bets wide. Gives fold equity vs hands like AQ or lower pairs, and commits to a strong hand.
+
+Given that **we have ~85 behind** and **BB 4-bet 14**, a **5-bet all-in is optimal**:
+
+* Maximize fold equity
+* Avoid playing dominated postflop
+* Simplifies decision and protects our equity
+
+Calling is reasonable in very deep stack cash games, but here with shallow-ish stacks relative to pot, **all-in is standard**.
+
+---
+
+### 6. Final decision: **ALL IN**
+
+**Rationale:**
+
+* AK is strong against BB’s 4-bet range
+* Postflop play is difficult if BB has AA/KK
+* Pot odds are favorable for committing
+* Maximizes fold equity and simplifies play
+
+---
+
+If you want, I can also break down **exact 5-bet sizing vs BB and BTN ranges** to show why 14 is perfect for committing and how BTN’s call affects your decision. Do you want me to do that?
+
+
+CoT 2:
+
+Here’s the analysis of your scenario step by step:
+
+---
+
+1. **Stage:** Preflop
+
+2. **Known info:**
+
+   * **Hero hand:** A♣ K♥ (strong broadway hand)
+   * **Positions & actions:**
+
+     * UTG opens 2.0 → likely strong range: 77+, AJs+, KQs+
+     * BTN calls → likely suited connectors, broadway, some pairs
+     * SB (hero) calls → A♣ K♥
+     * BB raises 14 → 4-bet, signaling very strong range (JJ+, AK)
+     * UTG folds, BTN calls
+   * **Pot size:** 32 chips (including all preflop action)
+   * **Stack sizes:** ~100 chips
+
+3. **Opponent range estimate:**
+
+   * **BB 4-bet 14 into 3-bet pot:** Very tight; almost certainly JJ+, AK, maybe QQ/KQs suited occasionally.
+   * **BTN call 4-bet:** Could be suited broadways or speculative holdings, but likely dominated by BB.
+   * **Hero’s hand (A♣ K♥) vs BB’s 4-bet:** Domination risk is high (if BB has AA or KK, or even QQ), and postflop playability is difficult out of position.
+
+4. **Pot odds and equity estimate:**
+
+   * Hero must call **14** into **32** → pot odds ≈ 30%
+   * **Equity vs BB’s 4-bet range:**
+
+     * AK suited vs JJ+ or AK: ~45% vs JJ+, <50% vs AK
+     * Overall likely <40% vs BB 4-bet range, worse if BTN is calling too.
+   * Pot odds < equity → call is not profitable long-term.
+
+5. **Action reasoning:**
+
+   * Out of position with a marginally dominated hand against a 4-bet, with BTN calling behind.
+   * Even if you hit top pair postflop, BB’s likely range dominates your hand frequently.
+   * Folding preserves your stack for better spots; calling is speculative and high-risk.
+   * Raising (5-bet) is extremely polarizing and risky, only feasible with a read on BB being capable of folding AK+, which is unlikely.
+
+6. **Final decision:** **FOLD**
+
+---
+
+The key is recognizing that preflop 4-bet scenarios dramatically tighten ranges, and AK offsuit, while strong, is dominated and not profitable to continue here.
+
+
+
+PROMPT 12:
+
+You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips and the big blind is 1 chips. Everyone started with 100 chips.
+The player positions involved in this game are UTG, HJ, CO, BTN, SB, BB.
+In this hand, your position is BB, and your holding is [Ace of Spade and Eight of Heart].
+Before the flop, SB raise 3.0 chips, and BB call. Assume that all other players that is not mentioned folded.
+The flop comes Ace Of Diamond, Eight Of Diamond, and Three Of Diamond, then SB check, and BB check.
+The turn comes King Of Heart, then SB check, BB bet 5 chips, SB raise 16 chips, and BB call.
+The river comes Jack Of Club, then SB check.
+
+
+Now it is your turn to make a move.
+To remind you, the current pot size is 38.0 chips, and your holding is [Ace of Spade and Eight of Heart].
+
+Your optimal action is: check
+
+Explain your reasoning step by step. Format your answer in this structure:
+1. Stage: <Preflop / Flop / Turn / River>
+2. Known info: <board cards, hero hand, stack sizes, position>
+3. Opponent range estimate: <brief logic>
+4. Pot odds and equity estimate: <numbers or qualitative>
+5. Action reasoning: <why fold / call / raise>
+6. Final decision: <FOLD / CHECK / CALL / BET X / RAISE X / ALL IN>
+
+
+CoT 1:
+
+Let’s carefully analyze this hand step by step.
+
+---
+
+### 1. Stage: **River**
+
+### 2. Known info:
+
+* **Hero (BB) hand:** A♠ 8♥ → top two pair on flop (Aces & Eights)
+* **Position:** Big Blind, acting last on river
+* **Stacks:** Started 100 each; some betting: SB raised 3 preflop, BB called, turn bets: BB 5, SB 16, BB called → current stacks ~70–80 remaining.
+* **Board:** A♦ 8♦ 3♦ K♥ J♣
+* **Pot size:** 38 chips
+* **Action so far:**
+
+  * Preflop: SB raised 3, BB called
+  * Flop: A♦ 8♦ 3♦ → check/check
+  * Turn: K♥ → BB bets 5, SB raises 16, BB calls
+  * River: J♣ → SB checks
+
+---
+
+### 3. Opponent range estimate:
+
+* SB opened preflop → likely broad range in 6-max (pairs, broadway, suited connectors, some suited aces)
+* Flop check → passive line; might be underpair, weak ace, or diamond draw
+* Turn check-raise → **polarized range**: either very strong (Kx, sets, two pair) or bluffing/missed draws
+* River check → could indicate missed draw (no flush) or pot-control with marginal hand (Kx, QJ, underpair, weaker A)
+
+**Reasonable SB river range:**
+
+* Value: KQ, KJ, KT, 99–33, maybe weaker Ax hands (A3, A8?)
+* Bluffs: missed diamonds (Q♦ T♦, J♦ T♦), some weaker broadway combos
+
+---
+
+### 4. Pot odds and equity estimate:
+
+* **Pot:** 38 chips
+
+* **Cost to act:** 0 (check) → can choose to check or bet
+
+* **Equity:** Hero has **top two pair**.
+
+* Beats: all non-Kx hands, underpairs, weaker Aces
+
+* Loses to: sets (unlikely given SB preflop raise?), Kx, rare rivered straights (Q-T, maybe?), flush impossible (no diamonds on river)
+
+* **Equity estimate:** Hero is **very strong**, likely **>70% vs SB range**
+
+---
+
+### 5. Action reasoning:
+
+* Hero **has showdown value** and is very likely ahead.
+* SB **checked river**, which can indicate pot control or a missed draw.
+* **Betting** can extract value from: Kx hands, underpairs, weaker Aces, 8x, pocket pairs below 8.
+* **Check-fold:** unnecessary; hero is almost always ahead and should get value.
+* **Check-call:** not applicable; SB already checked → cannot call.
+* **Optimal sizing:**
+
+  * Small value bet (~10–15 chips) can induce calls from worse hands
+  * Too large may scare off worse hands, but can also polarize
+
+Given the line, a **small to medium value bet** is ideal to extract chips from weaker Kx or pocket pairs.
+
+---
+
+### 6. Final decision: **BET 12**
+
+**Rationale:**
+
+* Hero has top two pair, likely best hand
+* SB checked → likely pot-controlling or bluff
+* Small to medium value bet maximizes profit from worse hands while not overbetting
+
+---
+
+If you want, I can also **analyze an alternative line where we overbet the river** to induce a fold from Kx while still being profitable vs bluffs. This can give an advanced 6-max exploitation edge. Do you want me to do that?
+
+
+CoT 2:
+
+Here’s a detailed analysis of your scenario:
+
+---
+
+1. **Stage:** River
+
+2. **Known info:**
+
+   * **Board:** A♦ 8♦ 3♦ K♥ J♣
+   * **Hero hand:** A♠ 8♥ (top two pair, Aces and Eights)
+   * **Pot size:** 38 chips
+   * **Positions & action summary:**
+
+     * SB opened 3 → BB called with A8
+     * Flop: A♦ 8♦ 3♦ → both check
+     * Turn: K♥ → BB bets 5, SB raises 16 → BB calls
+     * River: J♣ → SB checks
+   * **Stack sizes:** ~100 chips
+
+3. **Opponent range estimate:**
+
+   * SB opened from SB → wide range: suited connectors, broadway, pairs, some Ax
+   * Turn 3-bet (raise 16 over 5) → shows strong hand, likely a King, set (3x, 8x, Aces rare), or strong draw (flush draw missed)
+   * River check → polarized: either weak showdown hands missed diamonds, or strong value like sets or two pair slower than A8
+
+4. **Pot odds and equity estimate:**
+
+   * Current pot: 38 chips, no bet on river
+   * Equity: A8 two pair beats most busted diamonds, lower pairs, missed broadway hands; loses to sets, higher two pair, and rare KJ/KT
+   * Hero is likely ahead of SB’s river check range if SB is giving up on bluffs
+
+5. **Action reasoning:**
+
+   * Betting on river could force folds from weak hands but is unlikely to get value from better hands (sets, Kx, Jx)
+   * Checking keeps the pot manageable and allows showdown of a strong hand
+   * Folding is unnecessary because hero has strong top-two-pair
+   * Calling is irrelevant because no bet is made
+
+6. **Final decision:** **CHECK**
+
+---
+
+Top two pair in this scenario is strong; no aggressive action is needed when villain is checking behind.
+
+
+
+PROMPT 13:
+
+You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips and the big blind is 1 chips. Everyone started with 100 chips.
+The player positions involved in this game are UTG, HJ, CO, BTN, SB, BB.
+In this hand, your position is CO, and your holding is [Ace of Diamond and King of Spade].
+Before the flop, CO raise 2.3 chips, and BB call. Assume that all other players that is not mentioned folded.
+The flop comes Ten Of Heart, Three Of Spade, and Two Of Diamond, then BB check, and CO check.
+The turn comes Ace Of Club, then BB check, CO bet 6 chips, BB raise 17 chips, and CO call.
+The river comes Queen Of Club, then BB check, CO bet 29 chips, and BB raise 80 chips.
+
+
+Now it is your turn to make a move.
+To remind you, the current pot size is 148.0 chips, and your holding is [Ace of Diamond and King of Spade].
+
+Your optimal action is: fold
+
+Explain your reasoning step by step. Format your answer in this structure:
+1. Stage: <Preflop / Flop / Turn / River>
+2. Known info: <board cards, hero hand, stack sizes, position>
+3. Opponent range estimate: <brief logic>
+4. Pot odds and equity estimate: <numbers or qualitative>
+5. Action reasoning: <why fold / call / raise>
+6. Final decision: <FOLD / CHECK / CALL / BET X / RAISE X / ALL IN>
+
+
+CoT 1:
+
+Got it. Let’s break this down carefully step by step.
+
+---
+
+### 1. Stage: **River**
+
+### 2. Known info:
+
+* **Board:** Ten♥, Three♠, Two♦, Ace♣, Queen♣
+* **Hero hand (CO):** Ace♦ King♠
+* **Stacks:** Both started with 100, current pot is 148, BB’s effective stack remaining after river raise is ~80 chips (assuming he covers your bet)
+* **Action so far:**
+
+  * Preflop: CO raised 2.3, BB called
+  * Flop: 10♥ 3♠ 2♦, BB checked, CO checked
+  * Turn: A♣, BB checked, CO bet 6, BB raised 17, CO called
+  * River: Q♣, BB checked, CO bet 29, BB raised 80
+
+---
+
+### 3. Opponent range estimate:
+
+* BB called a 2.3 preflop raise, suggesting a fairly wide range: suited connectors, medium-high cards, broadway hands, pocket pairs.
+* Flop check-call on dry board (10♥ 3♠ 2♦) indicates either:
+
+  * Weak top pair hands or draws (though there’s almost no draw here)
+  * Slow-playing a strong hand (sets)
+* Turn check-raise over CO’s small bet on A♣:
+
+  * Strong hands that connect with Ace (A10, AT, AJ, AQ, maybe AK)
+  * Possibly set (TT, 33, 22)
+* River Q♣: big raise over CO’s 29-chip bet:
+
+  * Represents a very strong hand: likely two pair or better (AQ, Q10, sets) or a bluff (less likely given previous aggression pattern)
+
+**Summary:** BB is polarized: either strong hands (AQ, sets, two pair) or a bluff (missed draws, less likely here since board is dry).
+
+---
+
+### 4. Pot odds and equity estimate:
+
+* Pot = 148 chips before BB’s 80-chip raise
+* To call 80 into 228 pot (148 + 80) → **pot odds ~ 80 / 228 ≈ 35%**
+* Hero has **top pair top kicker** (A♣ on turn, King kicker) → strong hand, but vulnerable:
+
+  * Beaten by AQ, sets (TT, 33, 22) → realistically 3–6 combos of sets + 3 combos of AQ = ~6–9 combos
+  * Could beat occasional bluffs
+* **Equity estimate:** Against polarized range, hero likely has **25–40% equity**
+* Required equity ~35%, so at the margin
+
+---
+
+### 5. Action reasoning:
+
+* Hero’s hand (AK) is **top pair, top kicker** but **the board now shows Q on river**, completing some potential two pair combos (AQ, Q10).
+* BB’s **large river raise** (80 into 148 pot) is **very polarized**:
+
+  * Likely only strong value hands
+  * Could be a bluff, but given dry board and prior aggressive action, less likely
+* Hero has **little fold equity** if you raise — calling may be cheaper than trying to shove
+* Given pot odds ~35% and estimated equity <35%, this is **marginal at best**, and often a **fold is correct**
+
+---
+
+### 6. Final decision: **FOLD**
+
+**Reasoning summary:**
+
+* River Q likely improves BB’s value range more than it improves hero’s
+* BB’s sizing and prior line indicate polarization toward value
+* Hero’s AK is almost always behind AQ or sets in this situation
+* Calling would be high risk with insufficient equity to justify
+
+---
+
+If you want, I can also run a **range vs range simulation** for this exact spot to quantify the exact fold/call EV. It would give a precise number instead of qualitative reasoning.
+
+Do you want me to do that?
+
+
+CoT 2:
+
+Here’s a detailed step-by-step breakdown of your situation using the structure you requested:
+
+---
+
+### 1. Stage: Preflop
+
+**Known info:**
+
+* Hero (CO) holds **A♦ K♠**.
+* Blinds: SB 0.5, BB 1.
+* Stack sizes: 100 chips each.
+* Action: CO raises 2.3 chips, BB calls, everyone else folds.
+
+**Opponent range estimate:**
+
+* BB likely defending with a wide range: suited connectors, broadway hands, medium pairs, suited Aces, possibly KQ/KJ type hands.
+
+**Pot odds and equity estimate:**
+
+* Pot is 4.6 chips preflop. Hero has a strong equity vs. BB’s calling range (~60%).
+
+**Action reasoning:**
+
+* Standard CO open is correct. BB call is expected.
+
+**Final decision:**
+
+* **Raise 2.3 preflop** ✅ (already done)
+
+---
+
+### 2. Stage: Flop (T♥ 3♠ 2♦)
+
+**Known info:**
+
+* Hero: A♦ K♠
+* Board: T♥ 3♠ 2♦
+* Stacks: ~97.7 (CO), 98 (BB)
+* Action: BB checks, CO checks
+
+**Opponent range estimate:**
+
+* BB could have middle pair, weak Tens, straight draws, overcards like KQ, QJ, J9 suited, or slowplayed sets.
+
+**Pot odds and equity estimate:**
+
+* Hero has overcards to the board (A♠ K♦) but only top pair on turn is possible. Currently, just high cards; no pair yet. Equity is moderate vs BB’s range.
+
+**Action reasoning:**
+
+* Check is reasonable; the board is dry. Betting risks facing overpair or top pair domination.
+
+**Final decision:**
+
+* **Check** ✅ (already done)
+
+---
+
+### 3. Stage: Turn (A♣)
+
+**Known info:**
+
+* Hero: A♦ K♠ (now top pair, top kicker)
+* Board: T♥ 3♠ 2♦ A♣
+* Stacks: CO 97.7, BB 98
+* Action: CO bets 6, BB raises to 17, CO calls
+
+**Opponent range estimate:**
+
+* BB check-call on flop, then check-raise on turn over A: could represent sets (TT, 33, 22), two pair (unlikely), or a big draw (straight possible). Could also bluff.
+
+**Pot odds and equity estimate:**
+
+* Pot after turn action: 6 + 17 + 6 = 29 chips (approx). CO calls 17 more into ~29 chips. Pot odds ~17/(29+17) ≈ 37%.
+* Hero’s top pair is strong but vulnerable to sets or straight draws. Equity vs range: moderate but risky.
+
+**Action reasoning:**
+
+* Calling turn raise is standard; raising more could be committing with a vulnerable hand.
+
+**Final decision:**
+
+* **Call 17 chips** ✅ (already done)
+
+---
+
+### 4. Stage: River (Q♣)
+
+**Known info:**
+
+* Hero: A♦ K♠
+* Board: T♥ 3♠ 2♦ A♣ Q♣
+* Stacks: ~75 (CO), ~64 (BB)
+* Pot: 148 chips
+* Action: CO bets 29, BB raises 80
+
+**Opponent range estimate:**
+
+* BB’s check-call on turn then massive river raise indicates very strong hands:
+
+  * Two pair (unlikely), sets, straights (KJ gives a straight, J9 for straight possible), or slowplayed Ax sets like AQ (if AQ suited).
+  * Bluff is possible but very unlikely given line: check-call-turn, then massive river raise.
+
+**Pot odds and equity estimate:**
+
+* To call 80 into a 148 + 29 + 80 = 257 pot → need 80/(257+80) ≈ 23.7% equity.
+* Hero’s hand (A♠ K♠) beats only bluffs and some weaker A hands. Likely behind vs BB range (sets, straights, two pair). True equity probably <20%.
+
+**Action reasoning:**
+
+* Hero is facing a huge overbet (80 into 148) with just **top pair, top kicker**, but the board is coordinated: Q♣ on the river completes straight draws like KJ.
+* Likely behind most of BB’s value range. Pot odds are okay, but equity is too low to justify a call.
+* Raising or shoving is not viable; only fold or call possible.
+
+**Final decision:**
+
+* **FOLD** ✅
+
+---
+
+**Summary reasoning:**
+Even though you have top pair top kicker, the action pattern (check-call on flop, bet-call on turn, overbet on river) signals a very strong hand from BB. The river Q♣ is a card that completes multiple possible straights, and your kicker does not protect you. Pot odds do not compensate for the equity disadvantage.
+
+---
+
+**Optimal action:** **FOLD**
+
+
+
+PROMPT 14:
+
+You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips and the big blind is 1 chips. Everyone started with 100 chips.
+The player positions involved in this game are UTG, HJ, CO, BTN, SB, BB.
+In this hand, your position is HJ, and your holding is [Jack of Heart and Jack of Diamond].
+Before the flop, HJ raise 2.0 chips, SB raise 11.0 chips, and HJ call. Assume that all other players that is not mentioned folded.
+The flop comes Four Of Spade, Four Of Heart, and Three Of Heart, then SB check, HJ bet 12 chips, and SB call.
+The turn comes Nine Of Spade, then SB bet 28 chips.
+
+
+Now it is your turn to make a move.
+To remind you, the current pot size is 75.0 chips, and your holding is [Jack of Heart and Jack of Diamond].
+
+Your optimal action is: raise 77
+
+Explain your reasoning step by step. Format your answer in this structure:
+1. Stage: <Preflop / Flop / Turn / River>
+2. Known info: <board cards, hero hand, stack sizes, position>
+3. Opponent range estimate: <brief logic>
+4. Pot odds and equity estimate: <numbers or qualitative>
+5. Action reasoning: <why fold / call / raise>
+6. Final decision: <FOLD / CHECK / CALL / BET X / RAISE X / ALL IN>
+
+
+CoT 1:
+
+Got it! Let’s break this down carefully step by step.
+
+---
+
+### 1. Stage: Turn
+
+### 2. Known info:
+
+* Board: 4♠ 4♥ 3♥ 9♠
+* Hero hand (HJ): J♥ J♦
+* Stack sizes: HJ ~87 chips (after preflop and flop bets), SB ~61 chips (after preflop and flop calls)
+* Pot: 75 chips
+* Action: SB bets 28 chips into 75
+
+---
+
+### 3. Opponent range estimate:
+
+* SB 3-bet preflop from the small blind: likely strong broadway hands, medium-to-high pairs (TT+), suited connectors, and possibly some bluffs or suited aces.
+* SB called HJ’s flop bet on 4♠ 4♥ 3♥: indicates a wide range; could include:
+
+  * Overpairs (TT+)
+  * Top pair or middle pair with draws (e.g., 56s, 67s for straight draws, heart draws)
+  * Flush draws (any two hearts)
+* Turn 9♠: SB bets 28 into 75 — this is ~37% pot. Could be a value bet or a semi-bluff with a draw. Not an extremely strong bet.
+* Not likely: small pocket pairs below 9 (like 22, 33), since they often fold flop vs bet.
+
+---
+
+### 4. Pot odds and equity estimate:
+
+* Pot = 75, SB bet = 28 → new pot if you call = 75 + 28 + 28 = 131
+* Call = 28 → Pot odds = 28 / 131 ≈ 21%
+* Hero hand: J♦ J♥ — overpair to the board, no flush or straight draws for SB to have completed yet. Equity is strong against a wide range, but vulnerable to 9x, 44, or slowplayed sets.
+* Qualitative estimate: Hero is likely ahead of many draws and top pair combos. Vulnerable mainly to 44, 99, sets (33, 44, 99).
+
+---
+
+### 5. Action reasoning:
+
+* Folding is too weak: overpair is too strong vs a small pot bet, given SB can have bluffs or draws.
+* Calling is reasonable: pot odds are good (~21%), and your hand is still likely ahead. You can re-evaluate on the river.
+* Raising is risky: SB could have 44, 33, 99, or overpair. Raising would commit a significant portion of your stack and might get called by better hands. At this stage, a raise is semi-bluffish and exposes you to heavy losses.
+
+✅ Optimal move: **call**, keep the pot manageable, and evaluate the river based on SB’s next action.
+
+---
+
+### 6. Final decision:
+
+**CALL 28**
+
+---
+
+If you want, I can also break down **possible river scenarios and how to play them** after this turn call. This is often where HJ with JJ faces tricky decisions vs a small blind who is aggressive postflop.
+
+Do you want me to do that next?
+
+
+CoT 2:
+
+Got it! Let's break down your hand scenario step by step with the structure you requested.
+
+---
+
+### 1. Stage: Turn
+
+### 2. Known info:
+
+* **Board:** 4♠ 4♥ 3♥ 9♠
+* **Hero hand (HJ):** J♥ J♦
+* **Stacks:** HJ ~ 87 chips left (after 2 preflop raises + 12 flop bet)
+* **SB stack:** ~100 chips (assuming effective stack ~100)
+* **Pot size:** 75 chips
+* **Position:** HJ (in position on SB preflop but out of position post-flop)
+
+---
+
+### 3. Opponent range estimate:
+
+* SB **3-bet preflop** to 11 over your 2-chip raise. In 6-max, a typical SB 3-bet range could be:
+  **Strong hands:** TT+, AQs+, KQs, some bluffs like suited connectors or A5s/A4s suited.
+* On the **flop (4♠ 4♥ 3♥)**: SB **check-call** 12-chip bet. This indicates:
+
+  * They may have a pocket pair like 55-99, a slow-played overpair like TT+ (less likely), or a draw like hearts (flush draw) or 5♣6♣ type straight draws.
+* On the **turn (9♠)**: SB leads with 28 into 75. This is roughly **37% pot**:
+
+  * Could be a bluff with overcards or heart draws.
+  * Could be a value bet with 44 (unlikely, they would check-raise flop sometimes), 99, 33, 55-66.
+
+**Summary:** Their range is polarized: some **overpairs, some 9x (top pair)**, and some **bluffs with hearts**.
+
+---
+
+### 4. Pot odds and equity estimate:
+
+* **Pot:** 75
+* **Bet to call:** 28
+* **Pot after call:** 75 + 28 = 103, but you also have to add your call = 28 → **final pot = 131 if called**
+* **Pot odds:** 28 / 131 ≈ 21% to call
+* **Equity:**
+
+  * Hero has J♥ J♦ → overpair to board, only scared of 9x or set (44, 33, 99) or flush draw completing hearts.
+  * Rough estimate: Hero is **favored against a bluff (50-70% equity)**, ~50% vs 9x, <20% vs set.
+* **Turn raise sizing (~77)**:
+
+  * Makes pot 75 + 28 + 77 = 180
+  * Puts maximum pressure on marginal pairs (like 55-88, 9x) and draws.
+
+---
+
+### 5. Action reasoning:
+
+* **Calling:** Allows draws or 9x to continue. Sets are already crushing you; you are vulnerable to the flush completing on the river.
+* **Folding:** Too tight; JJs are ahead of a lot of SB’s betting range.
+* **Raising (~77):**
+
+  * Polarizes your range: you look like a big overpair or a bluff.
+  * Maximize value vs heart draws, 9x, and lower pocket pairs.
+  * Protects against flush draws.
+  * Puts SB in a tough spot: many hands will fold (55-88, weaker 9x, draws).
+  * Sets may call but they are rare.
+
+**Strategic summary:** A **raise of ~77** effectively achieves both value and protection, folding out weaker hands and charging draws, while still getting value from hands that call worse than you.
+
+---
+
+### 6. Final decision:
+
+**RAISE 77**
+
+---
+
+If you want, I can also break down **the exact river plan** depending on SB’s reaction to this raise, which is critical in 6-max deep-stacked play. It’s where JJs can either become the nuts or lose to sets.
+
+Do you want me to do that?
+
+
+
+PROMPT 15:
+
+You are a specialist in playing 6-handed No Limit Texas Holdem. The following will be a game scenario and you need to make the optimal decision.
+
+Here is a game summary:
+
+The small blind is 0.5 chips and the big blind is 1 chips. Everyone started with 100 chips.
+The player positions involved in this game are UTG, HJ, CO, BTN, SB, BB.
+In this hand, your position is BTN, and your holding is [Jack of Club and Eight of Club].
+Before the flop, BTN raise 2.5 chips, and BB call. Assume that all other players that is not mentioned folded.
+The flop comes Ten Of Heart, Four Of Club, and Five Of Diamond, then BB check, and BTN check.
+The turn comes Seven Of Spade, then BB bet 4 chips, and BTN call.
+The river comes Three Of Diamond, then BB check.
+
+
+Now it is your turn to make a move.
+To remind you, the current pot size is 13.0 chips, and your holding is [Jack of Club and Eight of Club].
+
+Your optimal action is: bet 10
+
+Explain your reasoning step by step. Format your answer in this structure:
+1. Stage: <Preflop / Flop / Turn / River>
+2. Known info: <board cards, hero hand, stack sizes, position>
+3. Opponent range estimate: <brief logic>
+4. Pot odds and equity estimate: <numbers or qualitative>
+5. Action reasoning: <why fold / call / raise>
+6. Final decision: <FOLD / CHECK / CALL / BET X / RAISE X / ALL IN>
+
+
+CoT 1:
+
+Got it! Let’s analyze this hand carefully, step by step, for the **river decision**.
+
+---
+
+### 1. Stage: River
+
+### 2. Known info:
+
+* **Board:** 10♥ 4♣ 5♦ 7♠ 3♦
+* **Hero hand (BTN):** J♣ 8♣
+* **Stacks:** ~92 chips each (after preflop raise and calls)
+* **Pot size:** 13 chips
+* **Position:** BTN (you are last to act)
+* **Action so far:**
+
+  * Preflop: BTN raise 2.5, BB call
+  * Flop: 10♥ 4♣ 5♦ → check/check
+  * Turn: 7♠ → BB bets 4, BTN calls
+  * River: 3♦ → BB checks
+
+---
+
+### 3. Opponent range estimate:
+
+* BB called a 2.5 preflop raise from the blinds → likely a **wide calling range**: suited connectors, broadways, small-medium pairs, maybe some weaker Ax hands.
+* Flop check → no strong made hand yet, or slow-playing a strong hand like 10x or 5x.
+* Turn bet → likely **middle-strength hands**, possibly overcards, weak tens, small pairs, or draws that missed (like 6-8, 8-9).
+* River check → probably **doesn’t have a strong hand**. Could have showdown value with missed draws, low pairs, or bluffing.
+
+So the BB range on the river is likely:
+
+* Missed straight draws: 6-8, 8-9
+* Weak pairs: 5x, 4x
+* Weak overcards: Kx, Qx, Ax with no pair
+
+---
+
+### 4. Pot odds and equity estimate:
+
+* Pot = 13
+* To call a bet? **BB checked**, so no bet to call → no risk, only opportunity to **value bet or bluff**.
+* Hero currently has **J8 high**; board is **10-7-5-4-3 rainbow**.
+* Possible straights: 6-8, 6-9, 8-9 → you **missed straight** (no 9 or 6)
+* Possible two pairs: 10-7, 10-5, 7-5 → you **don’t have**
+* You **have nothing** (J high)
+* Your showdown value is **very low** → almost always beaten by any pair or better
+
+---
+
+### 5. Action reasoning:
+
+* BB is **checking** the river → could be weak, but also could be slow-playing a hand like 10x or 7x.
+* Hero has **no pair, no straight, no flush** → only J8 high.
+* Betting for value: impossible, **nothing beats BB’s worst hands**.
+* Bluffing? Possible, but BB’s range likely has hands that beat J8 high or would call a river bet with top pair → **low fold equity**.
+* Best choice: **avoid losing more chips** and **go to showdown for free** if we have a chance, but in this case, we don’t even have showdown value.
+
+---
+
+### 6. Final decision:
+
+**CHECK** → let it go, as betting would be a pure bluff with almost no fold equity, and calling is irrelevant (no bet).
+
+---
+
+✅ **Summary reasoning:**
+On a 10-7-5-4-3 board with J8 high, facing a river check, you **cannot beat any realistic part of BB’s range**, and there’s no value in betting or bluffing. Checking preserves your remaining stack.
+
+---
+
+If you want, I can also calculate a **precise bluff frequency** here for advanced 6-max theory to see if a small bet could ever be profitable. This could slightly change optimal play in high-level scenarios.
+
+Do you want me to do that?
+
+
+
+CoT 2:
+
+Here’s a detailed breakdown of the optimal play in this scenario using the structure you requested:
+
+---
+
+1. **Stage:** River
+
+2. **Known info:**
+
+* **Board:** Ten♥, Four♣, Five♦, Seven♠, Three♦
+* **Hero hand:** J♣8♣ (Jack-Eight offsuit, clubs)
+* **Stacks:** Both effective stacks are ~92 chips (after preflop and turn action)
+* **Position:** BTN (you are last to act)
+* **Pot size:** 13 chips
+
+3. **Opponent range estimate:**
+
+* Preflop BB called your 2.5-chip raise. In a 6-max game, BB likely has a **wide calling range** from suited connectors, small/medium pocket pairs, broadway cards, and suited Ax.
+* Flop check by both indicates **neither hit a strong hand**. Check by you could indicate a weak hand or slow-play attempt.
+* Turn bet of 4 chips is small relative to the pot (~6.5-to-1 pot), suggesting a **marginal hand, a draw, or a weak value bet**. Could include small pairs, straight draws (e.g., 6-8, 8-9), overcards, or missed draws.
+* River check by BB indicates **missed draws, weak showdown hands, or induced bluff catchers**.
+
+So BB likely has **weak pairs, missed straight draws, or low showdown value hands**.
+
+4. **Pot odds and equity estimate:**
+
+* Pot: 13 chips
+* Hero’s hand: J♣8♣ — no pair, no straight, no flush. Top card Jack.
+* Absolute equity: low, but relative to BB’s likely weak range, a **value bluff is possible**.
+* A bet of 10 into 13 chips: BB would need ~44% equity to call profitably. Most missed draws or weak pairs may fold to a strong river bet.
+
+5. **Action reasoning:**
+
+* You have **nothing to showdown**, but the board is dry: T-4-5-7-3 with two diamonds and one club on board. Very few hands in BB’s calling range beat you because you are effectively **bluffing for fold equity**.
+* BB is likely to fold **missed straights, overcards, or weak pairs**.
+* A value bet or bluff in this spot **maximizes fold equity** and is standard in 6-max NLHE.
+* Checking here only gives BB free showdown with weak hands. Betting puts pressure and may win the pot outright.
+
+6. **Final decision:**
+   **BET 10**
+
+---
+
+✅ **Summary:** Your hand has no showdown value, but the river is favorable for a bluff. Betting ~3/4 pot leverages fold equity against weak BB hands, maximizing your expected value.
+
+---
+
+If you want, I can also **calculate the exact expected value of betting 10 vs. checking** using realistic BB ranges to show how profitable this bluff is. Do you want me to do that?

@@ -1,0 +1,240 @@
+PROMPT 1:
+
+CoT 1: CORRECT
+
+Good: Board/hand identification, line reconstruction, 
+identification of straights and flushes as real threats, 
+and coherent strategic reasoning leading to a check-back.
+
+Bad: Suit combinatorics are wrong (treating one-diamond hands as draws), 
+mislabelling the board as “4-flush”, slightly off pot math, 
+and overestimating how many flushes villain actually has. 
+Conceptually sound, but with important technical inaccuracies in hand-combinatorics.
+
+
+CoT 2:
+
+Good: Final choice of CHECK is at least reasonable for this structure; they correctly identify Hero's hand and the board.
+
+Bad (and worse than CoT 1):
+- Mis-describes the action (claims flop/turn check-calls that never happened).
+- Hallucinates stack sizes and uses the river pot as if it were the turn pot.
+- Confuses this spot with a different one (26-pot/9-bet logic).
+- Makes outright hand-ranking errors (claiming 7x/5x beat top two).
+- Talks about hearts when no hearts exist on the board.
+- Uses “pot odds” in a context where there’s nothing to call.
+
+
+
+PROMPT 2:
+
+CoT 1: CORRECT
+
+Good:
+- Board/hand, pot size, and pot-odds math.
+- Recognition that straights all miss and that top two is a premium bluff-catcher vs a small river donk.
+- Call vs raise logic is structurally sound; CALL is a strong default.
+
+Bad:
+- Treats “diamond draws” as real flush draws in a spot where a flush is mathematically impossible.
+- Overestimates the frequency of bluff candidates from “busted diamonds.”
+- Overstates the impact of blockers and understates realistic set frequency.
+
+
+CoT 2:
+
+Good:
+- Board/hand recap, pot size, bet size, and pot-odds math.
+- High-level conclusion that CALL is better than FOLD or RAISE with two pair and good pot odds.
+
+Bad:
+- Hallucinates a flop check-call that never happened and builds ranges around it.
+- Treats straights and flush draws as realistic outcomes in a spot where neither can exist on this runout.
+- Mislabels 7x as a pair and includes very dubious turn calls with Qx.
+
+
+
+PROMPT 3:
+
+CoT 1: INCORRECT
+
+Good:
+- Correct recap of board, pot, ranges, and “value-heavy check-raise” on turn.
+- Correct that many spade/straight draws miss by river and could be in SB’s range.
+
+Bad:
+- Misclassifies T9 (a made straight from the turn) as a “missed draw” on river.
+- Over-prunes SB’s strong-value hands from the river check range and overestimates fold equity vs Jx/Kx.
+- Bluff math is slightly inconsistent; recommended BET 24 is not aligned with the labeled optimal CHECK.
+
+
+CoT 2:
+
+Good:
+- Correctly restates the line and constructs a reasonable, strong SB range after the turn check-raise.
+- Understands that SB’s river check is not necessarily super weak; continuing range vs a bet is often strong value.
+
+Bad:
+- Does not rigorously quantify how many missed draws vs made hands exist; its “insufficient fold equity” argument is qualitatively plausible but not rigorously supported.
+
+
+
+PROMPT 4:
+
+CoT 1: CORRECT
+
+Good:
+- Correct board, hand, pot-size, and action recap.
+- Builds a reasonable flop check-raise range (straights, sets, 2-pair, combo draws).
+- Correct pot-odds math (≈30% needed) and correct equity intuition (nut flush draw >30%).
+- Correctly rejects folding and over-aggressive raising; identifies call as highest-EV.
+
+Bad:
+- Claims the turn “completes many flush draws” even though only 2 spades are on board (flush impossible).
+- Overstates how much the turn J♠ weakens villain’s value range.
+- Overvalues Ace overcard as meaningful equity vs sets/straights.
+- Gives an unsubstantiated “jam is −EV” claim without supporting combinatorics or fold-equity logic.
+
+
+CoT 2:
+
+Good:
+- Accurate restatement of board, hand, pot, and betting.
+- Solid depiction of BB’s polarized flop check-raise range.
+- Correct pot-odds threshold (~30%) and correct equity estimate for A♠5♠.
+- Correctly concludes that calling realizes equity and raising isolates into the top of villain’s range.
+
+
+Bad:
+- Minor inaccuracies: calls turn straight outs “backdoor” and loosely describes villain’s draws.
+- Does not quantify draw vs value combos when arguing fold equity.
+- Slightly vague/imprecise phrasing about “reducing villain’s flush possibilities.”
+- Considers options shallowly (e.g., does not fully analyze whether a jam could ever be viable).
+
+
+PROMPT 5:
+
+CoT 1: CORRECT
+
+Good:
+- Correctly restates board, hero hand, pot size, and action sequence.
+- Correctly notes that Hero has essentially no showdown value (A-high vs a range that called a turn raise).
+- Uses standard bluff-EV framing (risk X to win 38; needs fold% > risk / (risk+reward)).
+- Coherent narrative about what the river bluff is trying to accomplish (fold out Kx/Jx and missed draws).
+
+Bad:
+- Treats flushes as possible and A♠ as a “nut flush blocker,” even though the board has only two spades (flush is impossible on any runout here).
+- Overstates how “capped” SB is by checking river after calling a turn raise; strong hands (straights, 2-pair, slow-played sets) can still check.
+- Assumes villain will fold >50% of their river range (including much of Kx/Jx) to a big bet with no real justification.
+- Chooses a big bluff (BET 28) instead of the given optimal action CHECK.
+
+CoT 2
+
+Good:
+- Accurately restates the board, hero hand, pot, and line.
+- Sensible range story: SB’s turn bet–call vs raise is weighted toward Kx/Jx, pairs, and some draws → “bluff-catcher heavy” on river.
+- Correctly identifies that value betting is impossible with A-high and that SB’s range calls a bluff too often.
+- Concludes with the correct optimal action: CHECK.
+
+Bad:
+- Same core suit error as CoT 1: talks about spade draws, “nut spade blocker,” and “missed spade draws” in a spot where no flush can ever exist (only two spades on board).
+- Uses the blocker argument backwards in this (incorrect) frame: claims A♠ makes bluffing worse by blocking missed spades, but those combos don’t actually exist here.
+- Qualitative claims about SB being “too sticky” with Kx/Jx and hero being “under-bluffed” are plausible but not supported by any combo/frequency analysis.
+
+
+
+PROMPT 6:
+
+
+CoT 1: CORRECT
+
+Good:
+- Correct board/hand/action recap and consistent use of pot size and call amount.
+- Builds a reasonable, value-heavy BB turn check-raise range after flop check–check.
+- Correctly evaluates J♠8♠ as no pair, no flush draw, only a gutshot and low in Hero’s range.
+- Pot-odds vs equity logic is sound; recognizes under-29% equity and poor implied odds.
+- Correctly concludes that folding is the best action; raising/calling are both bad.
+
+Bad:
+- Incorrectly claims J♠ is a blocker to nut flush draws; it doesn’t block A♠X♠ at all.
+- Describes “89 gets there (open-ended on turn)” in a way that implies a made straight on turn, which is inaccurate (it’s only a draw).
+- Slightly underestimates how often sets can be slow-played and thus remain in villain’s range.
+- Makes confident claims about semi-bluff equity and set behavior without detailed combo support (more asserted than demonstrated).
+
+CoT 2:
+
+Good:
+- Correctly restates hand, board, pot, and action.
+- Constructs a plausible, value-heavy BB turn check-raise range given CO’s flop check (capped range).
+- Correctly identifies Hero’s hand as no pair, no flush draw, only a weak gutshot, and far below the ~29% equity requirement.
+- Properly rejects calling and raising, and chooses FOLD, consistent with both theory and the labeled optimal action.
+
+Bad:
+- Overstates that Hero’s equity is “far below” required even versus draw-heavy ranges, without numbers to support the claim.
+- Does not quantify value vs draw combo counts when asserting villain’s range is value-heavy.
+- Overly absolute language (“raising is impossible”) instead of “very bad EV.”
+- Misses an extra argument about poor implied odds when the gutshot hits (9 makes an obvious 4-to-a-straight board).
+
+
+
+PROMPT 7:
+
+CoT 1: CORRECT
+
+Good:
+- Correct board/hand/action recap and pot/price computation (call 10 to win 33 ⇒ ~30% needed).
+- Reasonable BTN range on flop and turn; correctly identifies 77 as a very weak bluff-catcher versus a value-heavy second barrel.
+- Properly recognizes that Hero’s equity is well below what pot odds require and that implied odds are poor.
+- Correctly rejects both call and raise and lands on the correct final action: FOLD.
+
+Bad:
+- Mislabels 89/T9-type straights as “getting there” / “open-ended on turn” on a board where they remain only gutshots.
+- Misstates that river 7 “often still loses to Kx / Jx boats”; 7 loses to Jx, but not to naked Kx, which can’t form a full house here.
+- Overstates “almost no improvement outs,” ignoring that 2 sevens are live and meaningful vs non-Jx value.
+- Uses rough equity ranges (10–18%) without backing them with explicit combo/equity analysis.
+
+
+CoT 2:
+
+Good:
+- Correctly restates the board, hand, pot size, and action.
+- Builds a reasonable BTN range where the turn J♦ heavily improves Jx/KJ/JT and preserves strong Kx/overpairs.
+- Correctly recognizes that 77 is a weak bluff-catcher with equity well below the ~30% pot-odds threshold.
+- Appropriately rejects calling and raising and settles on the correct action: FOLD.
+
+Bad:
+- Misclassifies Jx on KJ5J as “trips” when it is already a full house (Jacks full).
+- Claims 77 has “no redraws,” ignoring the two live 7s that give Hero a full house (still losing to Jx but beating many other hands).
+- Overstates equity as “near zero” without acknowledging those redraw outs and any bluff fraction.
+- Provides no explicit combo/equity breakdown to support the “value-heavy” and “far below 30%” claims.
+
+
+
+PROMPT 8:
+
+CoT 1: INCORRECT
+
+Good:
+- Correct board/hand identification and flush ranking: recognizes five-diamond board and that only Q♦x flushes beat Hero’s K♦-high flush.
+- Uses pot size and bet size correctly (3 into 8 → call needs ~27% equity).
+- Opponent range reasoning is mostly plausible: BB checks suggest many mid/weak diamonds and some bluffs, with Q♦x somewhat discounted.
+- Correctly rejects folding; understands that calling with such a strong flush is at least clearly profitable.
+
+Bad:
+- Core strategic error: claims a raise will “only” be called by Q♦x and all worse hands fold, so raising is bad — ignoring that many weaker flushes (J♦x, T♦x, 9♦x, etc.) will often call a raise to 10.
+- Consequently recommends CALL instead of the ground-truth RAISE 10, based on that faulty assumption.
+- Overconfidently infers BB “often doesn’t have a big diamond” and implicitly assumes BB almost never slowplays strong flushes, which is not reliable.
+- Treats some dominated non-diamond hands (sets/two-pair) as reasonable block bets on a 5-diamond board, which is possible but overstated.
+
+
+CoT 2:
+
+Good:
+- Correctly identifies K♦ T♥ on A♦8♦3♦9♦T♦ as a second-nut flush, beaten only by Q♦x flushes.
+- Uses pot and bet sizes correctly; recognizes that calling is trivially +EV and that BB’s small river bet is capped.
+- Reasonably infers that BB’s range includes many weaker diamonds and some bluffs after checking flop and turn.
+
+Bad:
+- Inconsistently states in range description that J♦x also beats Hero, which is a flush-ranking error (later corrected by saying we lose only to Q♦x).
+- Likely underestimates how many weaker one-diamond flushes BB can have, calling them “very few” when there are many plausible J♦/T♦/9♦/8♦ combos.
+- Slightly overstates how fully flop/turn checks “remove” strong made hands, though this doesn’t materially hurt the final action recommendation.

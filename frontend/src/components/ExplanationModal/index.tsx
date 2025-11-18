@@ -68,7 +68,7 @@ const ExplanationModal: FC<ExplanationModalProps> = ({
             <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
               Your Answer: {selectedAnswer}
             </h3>
-            <p className="text-gray-700 dark:text-gray-300 text-sm">
+            <p className="text-gray-700 dark:text-gray-300 text-sm whitespace-pre-wrap">
               {explanations[selectedAnswer] || 'No explanation available.'}
             </p>
           </div>
@@ -78,13 +78,13 @@ const ExplanationModal: FC<ExplanationModalProps> = ({
               <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">
                 Correct Answer: {correctAnswer}
               </h3>
-              <p className="text-gray-700 dark:text-gray-300 text-sm">
+              <p className="text-gray-700 dark:text-gray-300 text-sm whitespace-pre-wrap">
                 {explanations[correctAnswer] || 'No explanation available.'}
               </p>
             </div>
           )}
 
-          <div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg">
+          {/* <div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg">
             <h4 className="font-semibold text-blue-900 dark:text-blue-100 mb-2">
               💡 Poker Theory Tip
             </h4>
@@ -94,7 +94,7 @@ const ExplanationModal: FC<ExplanationModalProps> = ({
                 : "Keep studying! Understanding these concepts will improve your poker game significantly."
               }
             </p>
-          </div>
+          </div> */}
         </div>
 
         <div className="mt-6 flex justify-center">

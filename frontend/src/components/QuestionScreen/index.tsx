@@ -116,10 +116,10 @@ const QuestionScreen: FC = () => {
     setCurrentSelectedAnswer(selected)
 
     try {
-      const { explanation } = await api.explain(current.question, selected, correct)
+      const { explanation, explanation_summary } = await api.explain(current.question, selected, correct)
       setExplanationsMap({
         [selected]: explanation,
-        [correct]: explanation,
+        [correct]: explanation_summary,
       })
       setShowExplanationModal(true)
     } catch (e: any) {

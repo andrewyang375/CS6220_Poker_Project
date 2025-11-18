@@ -30,7 +30,7 @@ export const api = {
   randomQuestion: (stage?: "preflop" | "postflop") =>
     http<RandomQuestion>("GET", `/questions/random${stage ? `?stage=${stage}` : ""}`),
   explain: (instruction: string, selectedAnswer: string, correctAnswer: string) =>
-    http<{ explanation: string }>("POST", "/explain", {
+    http<{ explanation: string; explanation_summary: string }>("POST", "/explain", {
       instruction,
       selectedAnswer,
       correctAnswer,
