@@ -2,7 +2,7 @@
 
 A comprehensive poker strategy learning platform with interactive flashcards and AI explanations. Master poker theory through hands-on practice with realistic scenarios and detailed feedback.
 
-## 🎯 Features
+## Features
 
 - **5 Poker Strategy Categories**: Pre-Flop, Post-Flop, Tournament, Cash Game, and Mixed Practice
 - **Interactive Flashcards**: 4 multiple choice answers per question with detailed explanations
@@ -11,7 +11,7 @@ A comprehensive poker strategy learning platform with interactive flashcards and
 - **Responsive Design**: Works on desktop, tablet, and mobile devices
 - **Dark/Light Theme**: Toggle between themes for comfortable learning
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 
@@ -36,10 +36,16 @@ A comprehensive poker strategy learning platform with interactive flashcards and
    npm run dev
    ```
 
-4. **Open your browser**
+4. **Start the development Flask server**
+   ```bash
+   pip install -r requirements.txt
+   python app.py
+   ```
+
+5. **Open your browser**
    Navigate to `http://localhost:5173` (or the port shown in terminal)
 
-## 🎮 How It Works
+## How It Works
 
 ### Quiz Categories
 
@@ -65,24 +71,9 @@ Each question presents a realistic poker scenario with:
 - **Detailed explanations** for why each answer is correct or incorrect
 - **Poker theory insights** and learning tips
 
-## 🛠️ Development
-
-### Project Structure
+## Development
 
 ```
-src/
-├── components/          # React components
-│   ├── ExplanationModal/    # AI explanation popup
-│   ├── QuestionScreen/      # Quiz interface
-│   ├── QuizTopicsScreen/    # Category selection
-│   └── ResultScreen/        # Results display
-├── data/               # Quiz questions and topics
-│   └── QuizQuestions/      # Question data files
-├── context/            # React context for state management
-├── hooks/              # Custom React hooks
-└── utils/              # Helper functions
-```
-
 ### Available Scripts
 
 - `npm run dev` - Start development server
@@ -116,7 +107,7 @@ Example:
 }
 ```
 
-## 🎯 Learning Objectives
+## Learning Objectives
 
 This app helps you master:
 
@@ -128,7 +119,7 @@ This app helps you master:
 - **Tournament Strategy** - ICM considerations and stack management
 - **Cash Game Theory** - Bankroll management and table dynamics
 
-## 🚀 Deployment
+## Deployment
 
 ### Build for Production
 
@@ -150,14 +141,14 @@ The built files will be in the `dist` directory, ready for deployment to any sta
 2. Upload the `dist` folder to Netlify
 3. Configure redirects for SPA routing
 
-## 📱 Browser Support
+## Browser Support
 
 - Chrome (latest)
 - Firefox (latest)
 - Safari (latest)
 - Edge (latest)
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch: `git checkout -b feature/new-feature`
@@ -165,11 +156,7 @@ The built files will be in the `dist` directory, ready for deployment to any sta
 4. Push to branch: `git push origin feature/new-feature`
 5. Submit a pull request
 
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 🎯 Future Enhancements
+## Future Enhancements
 
 - Real AI integration for explanations
 - User progress tracking and statistics
@@ -177,7 +164,3 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - Multiplayer quiz modes
 - Integration with poker training sites
 - Mobile app development
-
----
-
-**Ready to improve your poker game? Start practicing now!** 🃏
