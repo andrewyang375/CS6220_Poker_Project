@@ -30,6 +30,7 @@ dist-ssr
 **/site-packages/
 **/.venv/
 **/venv/
-**/.env/
-**/env/
+**/.env
+**/env
 backend/.env
+frontend/.vite

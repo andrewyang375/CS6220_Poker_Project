@@ -1,0 +1,231 @@
+index,stage,decision,reference,result
+0,preflop,fold,fold,correct
+20,preflop,all in,call,incorrect
+40,preflop,fold,fold,correct
+60,preflop,fold,fold,correct
+80,preflop,fold,raise 7.5,incorrect
+100,preflop,fold,fold,correct
+120,preflop,fold,fold,correct
+140,preflop,fold,fold,correct
+160,preflop,fold,fold,correct
+180,preflop,fold,fold,correct
+200,preflop,fold,fold,correct
+220,preflop,fold,fold,correct
+240,preflop,call,call,correct
+260,preflop,fold,fold,correct
+280,preflop,fold,fold,correct
+300,preflop,fold,call,incorrect
+320,preflop,fold,call,incorrect
+340,preflop,call,fold,incorrect
+360,preflop,call,call,correct
+380,preflop,fold,call,incorrect
+400,preflop,fold,fold,correct
+420,preflop,call,call,correct
+440,preflop,call,call,correct
+460,preflop,call,call,correct
+480,preflop,fold,fold,correct
+500,preflop,fold,call,incorrect
+520,preflop,fold,fold,correct
+540,preflop,call,fold,incorrect
+560,preflop,fold,call,incorrect
+580,preflop,all in,call,incorrect
+600,flop,fold,call,incorrect
+620,flop,fold,call,incorrect
+640,flop,check,check,correct
+660,flop,call,call,correct
+680,flop,fold,raise 21,incorrect
+700,flop,fold,call,incorrect
+720,flop,fold,call,incorrect
+740,flop,fold,fold,correct
+760,flop,call,fold,incorrect
+780,flop,call,call,correct
+800,flop,call,call,correct
+820,flop,call,call,correct
+840,flop,check,bet 4,incorrect
+860,flop,fold,fold,correct
+880,flop,call,fold,incorrect
+900,flop,call,call,correct
+920,flop,fold,call,incorrect
+940,flop,fold,raise 41,incorrect
+960,flop,bet 3.0,bet 2,correct
+980,flop,fold,fold,correct
+1000,flop,call,call,correct
+1020,flop,call,raise 10,incorrect
+1040,flop,fold,raise 22,incorrect
+1060,flop,fold,raise 17,incorrect
+1080,flop,fold,raise 10,incorrect
+1100,flop,call,call,correct
+1120,flop,fold,fold,correct
+1140,flop,call,raise 11,incorrect
+1160,flop,check,check,correct
+1180,flop,raise 6,call,incorrect
+1200,flop,bet 2.5,check,incorrect
+1220,flop,fold,call,incorrect
+1240,flop,check,check,correct
+1260,flop,bet 3.0,bet 4,correct
+1280,flop,call,call,correct
+1300,flop,fold,call,incorrect
+1320,flop,call,call,correct
+1340,flop,call,raise 10,incorrect
+1360,flop,call,call,correct
+1380,flop,raise 42.0,call,incorrect
+1400,flop,fold,fold,correct
+1420,flop,call,call,correct
+1440,flop,call,call,correct
+1460,flop,call,call,correct
+1480,flop,fold,raise 16,incorrect
+1500,flop,call,call,correct
+1520,flop,fold,fold,correct
+1540,flop,fold,fold,correct
+1560,flop,bet 3.0,check,incorrect
+1580,flop,call,call,correct
+1600,turn,fold,call,incorrect
+1620,turn,bet 9.0,bet 15,correct
+1640,turn,bet 15,check,incorrect
+1660,turn,fold,fold,correct
+1680,turn,fold,call,incorrect
+1700,turn,bet 3.5,check,incorrect
+1720,turn,fold,raise 10,incorrect
+1740,turn,fold,raise 33,incorrect
+1760,turn,fold,raise 74,incorrect
+1780,turn,check,bet 20,incorrect
+1800,turn,check,check,correct
+1820,turn,call,raise 90,incorrect
+1840,turn,fold,fold,correct
+1860,turn,call,fold,incorrect
+1880,turn,check,check,correct
+1900,turn,fold,fold,correct
+1920,turn,fold,call,incorrect
+1940,turn,fold,fold,correct
+1960,turn,call,call,correct
+1980,turn,fold,fold,correct
+2000,turn,check,check,correct
+2020,turn,bet 6.5,check,incorrect
+2040,turn,check,check,correct
+2060,turn,fold,call,incorrect
+2080,turn,fold,call,incorrect
+2100,turn,fold,check,invalid
+2120,turn,fold,fold,correct
+2140,turn,bet 12.0,bet 18,correct
+2160,turn,fold,call,incorrect
+2180,turn,bet 4.0,check,incorrect
+2200,turn,fold,call,incorrect
+2220,turn,raise 45,raise 46,correct
+2240,turn,fold,call,incorrect
+2260,turn,fold,fold,correct
+2280,turn,fold,call,incorrect
+2300,turn,fold,call,incorrect
+2320,turn,fold,call,incorrect
+2340,turn,fold,call,incorrect
+2360,turn,call,call,correct
+2380,turn,fold,fold,correct
+2400,turn,fold,call,incorrect
+2420,turn,fold,call,incorrect
+2440,turn,fold,fold,correct
+2460,turn,check,bet 17,incorrect
+2480,turn,call,call,correct
+2500,turn,check,check,correct
+2520,turn,fold,raise 38,incorrect
+2540,turn,fold,call,incorrect
+2560,turn,call,call,correct
+2580,turn,raise 80,raise 90,correct
+2600,turn,fold,call,incorrect
+2620,turn,call,call,correct
+2640,turn,fold,fold,correct
+2660,turn,call,call,correct
+2680,turn,bet 3.0,check,incorrect
+2700,turn,check,check,correct
+2720,turn,fold,fold,correct
+2740,turn,call,call,correct
+2760,turn,fold,fold,correct
+2780,turn,fold,raise 86,incorrect
+2800,turn,bet 3.0,bet 3,correct
+2820,turn,call,call,correct
+2840,turn,check,check,correct
+2860,turn,fold,fold,correct
+2880,turn,bet 3.0,check,incorrect
+2900,turn,call,call,correct
+2920,turn,fold,call,incorrect
+2940,turn,fold,call,incorrect
+2960,turn,fold,fold,correct
+2980,turn,check,check,correct
+3000,turn,bet 10,check,incorrect
+3020,turn,fold,fold,correct
+3040,turn,fold,call,incorrect
+3060,turn,call,raise 80,incorrect
+3080,turn,fold,call,incorrect
+3100,river,bet 35,check,incorrect
+3120,river,call,raise 13,incorrect
+3140,river,check,check,correct
+3160,river,fold,fold,correct
+3180,river,check,bet 11,incorrect
+3200,river,fold,bet 23,invalid
+3220,river,check,check,correct
+3240,river,call,call,correct
+3260,river,fold,call,incorrect
+3280,river,check,bet 17,incorrect
+3300,river,call,call,correct
+3320,river,check,raise 62,invalid
+3340,river,call,call,correct
+3360,river,check,check,correct
+3380,river,call,raise 10,incorrect
+3400,river,fold,fold,correct
+3420,river,check,check,correct
+3440,river,fold,fold,correct
+3460,river,fold,call,incorrect
+3480,river,fold,fold,correct
+3500,river,fold,check,invalid
+3520,river,call,raise 89,incorrect
+3540,river,check,bet 23,incorrect
+3560,river,check,check,correct
+3580,river,check,check,correct
+3600,river,check,check,correct
+3620,river,fold,fold,correct
+3640,river,check,check,correct
+3660,river,bet 3.0,check,incorrect
+3680,river,call,call,correct
+3700,river,fold,fold,correct
+3720,river,call,check,invalid
+3740,river,fold,fold,correct
+3760,river,fold,raise 84,incorrect
+3780,river,fold,fold,correct
+3800,river,fold,raise 22,incorrect
+3820,river,call,raise 25,incorrect
+3840,river,check,bet 23,incorrect
+3860,river,fold,raise 81,incorrect
+3880,river,check,bet 10,incorrect
+3900,river,fold,call,incorrect
+3920,river,bet 4.0,bet 4,correct
+3940,river,fold,check,invalid
+3960,river,call,fold,incorrect
+3980,river,fold,fold,correct
+4000,river,fold,fold,correct
+4020,river,fold,fold,correct
+4040,river,check,check,correct
+4060,river,check,check,correct
+4080,river,bet 3.0,bet 3,correct
+4100,river,fold,fold,correct
+4120,river,check,check,correct
+4140,river,check,bet 13,incorrect
+4160,river,call,fold,incorrect
+4180,river,fold,raise 91,incorrect
+4200,river,fold,check,invalid
+4220,river,fold,fold,correct
+4240,river,check,bet 10,incorrect
+4260,river,check,check,correct
+4280,river,fold,fold,correct
+4300,river,fold,fold,correct
+4320,river,check,check,correct
+4340,river,fold,fold,correct
+4360,river,check,bet 8,incorrect
+4380,river,check,check,correct
+4400,river,call,raise 89,incorrect
+4420,river,fold,fold,correct
+4440,river,fold,raise 92,incorrect
+4460,river,fold,bet 24,invalid
+4480,river,fold,fold,correct
+4500,river,bet 10.0,bet 11,correct
+4520,river,check,bet 20,incorrect
+4540,river,fold,call,incorrect
+4560,river,fold,fold,correct
+4580,river,fold,fold,correct

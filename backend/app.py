@@ -176,7 +176,7 @@ cot_str = """Explain your reasoning step by step. Format your answer in this str
 1. Stage: <Preflop / Flop / Turn / River>
 2. Known info: <board cards, hero hand, stack sizes, position>
 3. Opponent range estimate: <brief logic>
-4. Pot odds and equity estimate: <numbers or qualitative>
+4. Pot odds and/or equity estimate if applicable: <numbers or qualitative>
 5. Action reasoning: <why fold / call / raise>
 6. Final decision: <FOLD / CHECK / CALL / BET X / RAISE X / ALL IN>
 """

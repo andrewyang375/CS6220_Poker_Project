@@ -1,0 +1,301 @@
+================================================================================
+GPT-3.5-TURBO POKER STRATEGY EVALUATION REPORT
+================================================================================
+
+Generated: 2025-12-05 16:54:16
+Model: gpt-3.5-turbo
+Dataset: PokerBench (230 examples sampled every 20th prompt)
+
+================================================================================
+1. OVERALL ACCURACY BY TEMPERATURE
+================================================================================
+
+Temperature: 0.1
+  Total:          230
+  Correct:        100 ( 43.5%)
+  Semi-correct:     2 (  0.9%)
+  Incorrect:      112 ( 48.7%)
+  Invalid:         16 (  7.0%)
+
+Temperature: 0.3
+  Total:          230
+  Correct:        112 ( 48.7%)
+  Semi-correct:     0 (  0.0%)
+  Incorrect:      104 ( 45.2%)
+  Invalid:         14 (  6.1%)
+
+Temperature: 0.5
+  Total:          230
+  Correct:         98 ( 42.6%)
+  Semi-correct:     1 (  0.4%)
+  Incorrect:      115 ( 50.0%)
+  Invalid:         16 (  7.0%)
+
+Temperature: 0.7
+  Total:          230
+  Correct:        104 ( 45.2%)
+  Semi-correct:     2 (  0.9%)
+  Incorrect:      107 ( 46.5%)
+  Invalid:         17 (  7.4%)
+
+Temperature: 1.0
+  Total:          230
+  Correct:        107 ( 46.5%)
+  Semi-correct:     0 (  0.0%)
+  Incorrect:      105 ( 45.7%)
+  Invalid:         18 (  7.8%)
+
+Temperature: direct
+  Total:          230
+  Correct:        125 ( 54.3%)
+  Semi-correct:     0 (  0.0%)
+  Incorrect:       97 ( 42.2%)
+  Invalid:          8 (  3.5%)
+
+================================================================================
+2. ACCURACY BY STAGE (ALL TEMPERATURES)
+================================================================================
+
+Temperature: 0.1
+------------------------------------------------------------
+  PREFLOP  - Correct:  24/ 30 ( 80.0%) | Semi:   0 (  0.0%) | Wrong:   6 ( 20.0%) | Invalid:   0 (  0.0%)
+  FLOP     - Correct:  22/ 50 ( 44.0%) | Semi:   0 (  0.0%) | Wrong:  25 ( 50.0%) | Invalid:   3 (  6.0%)
+  TURN     - Correct:  25/ 75 ( 33.3%) | Semi:   1 (  1.3%) | Wrong:  43 ( 57.3%) | Invalid:   6 (  8.0%)
+  RIVER    - Correct:  29/ 75 ( 38.7%) | Semi:   1 (  1.3%) | Wrong:  38 ( 50.7%) | Invalid:   7 (  9.3%)
+
+Temperature: 0.3
+------------------------------------------------------------
+  PREFLOP  - Correct:  20/ 30 ( 66.7%) | Semi:   0 (  0.0%) | Wrong:  10 ( 33.3%) | Invalid:   0 (  0.0%)
+  FLOP     - Correct:  24/ 50 ( 48.0%) | Semi:   0 (  0.0%) | Wrong:  22 ( 44.0%) | Invalid:   4 (  8.0%)
+  TURN     - Correct:  32/ 75 ( 42.7%) | Semi:   0 (  0.0%) | Wrong:  41 ( 54.7%) | Invalid:   2 (  2.7%)
+  RIVER    - Correct:  36/ 75 ( 48.0%) | Semi:   0 (  0.0%) | Wrong:  31 ( 41.3%) | Invalid:   8 ( 10.7%)
+
+Temperature: 0.5
+------------------------------------------------------------
+  PREFLOP  - Correct:  18/ 30 ( 60.0%) | Semi:   0 (  0.0%) | Wrong:  12 ( 40.0%) | Invalid:   0 (  0.0%)
+  FLOP     - Correct:  26/ 50 ( 52.0%) | Semi:   0 (  0.0%) | Wrong:  22 ( 44.0%) | Invalid:   2 (  4.0%)
+  TURN     - Correct:  29/ 75 ( 38.7%) | Semi:   0 (  0.0%) | Wrong:  40 ( 53.3%) | Invalid:   6 (  8.0%)
+  RIVER    - Correct:  25/ 75 ( 33.3%) | Semi:   1 (  1.3%) | Wrong:  41 ( 54.7%) | Invalid:   8 ( 10.7%)
+
+Temperature: 0.7
+------------------------------------------------------------
+  PREFLOP  - Correct:  18/ 30 ( 60.0%) | Semi:   0 (  0.0%) | Wrong:  12 ( 40.0%) | Invalid:   0 (  0.0%)
+  FLOP     - Correct:  24/ 50 ( 48.0%) | Semi:   0 (  0.0%) | Wrong:  24 ( 48.0%) | Invalid:   2 (  4.0%)
+  TURN     - Correct:  28/ 75 ( 37.3%) | Semi:   1 (  1.3%) | Wrong:  41 ( 54.7%) | Invalid:   5 (  6.7%)
+  RIVER    - Correct:  34/ 75 ( 45.3%) | Semi:   1 (  1.3%) | Wrong:  30 ( 40.0%) | Invalid:  10 ( 13.3%)
+
+Temperature: 1.0
+------------------------------------------------------------
+  PREFLOP  - Correct:  17/ 30 ( 56.7%) | Semi:   0 (  0.0%) | Wrong:  13 ( 43.3%) | Invalid:   0 (  0.0%)
+  FLOP     - Correct:  19/ 50 ( 38.0%) | Semi:   0 (  0.0%) | Wrong:  24 ( 48.0%) | Invalid:   7 ( 14.0%)
+  TURN     - Correct:  39/ 75 ( 52.0%) | Semi:   0 (  0.0%) | Wrong:  32 ( 42.7%) | Invalid:   4 (  5.3%)
+  RIVER    - Correct:  32/ 75 ( 42.7%) | Semi:   0 (  0.0%) | Wrong:  36 ( 48.0%) | Invalid:   7 (  9.3%)
+
+Temperature: direct
+------------------------------------------------------------
+  PREFLOP  - Correct:  20/ 30 ( 66.7%) | Semi:   0 (  0.0%) | Wrong:  10 ( 33.3%) | Invalid:   0 (  0.0%)
+  FLOP     - Correct:  27/ 50 ( 54.0%) | Semi:   0 (  0.0%) | Wrong:  23 ( 46.0%) | Invalid:   0 (  0.0%)
+  TURN     - Correct:  37/ 75 ( 49.3%) | Semi:   0 (  0.0%) | Wrong:  37 ( 49.3%) | Invalid:   1 (  1.3%)
+  RIVER    - Correct:  41/ 75 ( 54.7%) | Semi:   0 (  0.0%) | Wrong:  27 ( 36.0%) | Invalid:   7 (  9.3%)
+
+================================================================================
+3. ACTION DISTRIBUTION ANALYSIS
+================================================================================
+
+Temperature: 0.1
+------------------------------------------------------------
+Action     Predicted    Reference    Diff      
+------------------------------------------------------------
+all-in     1            0            +1        
+bet        39           22           +17       
+call       87           73           +14       
+check      6            41           -35       
+fold       81           64           +17       
+raise      15           30           -15       
+
+Temperature: 0.3
+------------------------------------------------------------
+Action     Predicted    Reference    Diff      
+------------------------------------------------------------
+all-in     4            0            +4        
+bet        44           22           +22       
+call       77           73           +4        
+check      7            41           -34       
+fold       80           64           +16       
+raise      16           30           -14       
+
+Temperature: 0.5
+------------------------------------------------------------
+Action     Predicted    Reference    Diff      
+------------------------------------------------------------
+all-in     6            0            +6        
+bet        40           22           +18       
+call       62           73           -11       
+check      7            41           -34       
+fold       97           64           +33       
+raise      16           30           -14       
+
+Temperature: 0.7
+------------------------------------------------------------
+Action     Predicted    Reference    Diff      
+------------------------------------------------------------
+all-in     1            0            +1        
+bet        37           22           +15       
+call       63           73           -10       
+check      10           41           -31       
+fold       91           64           +27       
+raise      26           30           -4        
+
+Temperature: 1.0
+------------------------------------------------------------
+Action     Predicted    Reference    Diff      
+------------------------------------------------------------
+all-in     6            0            +6        
+bet        35           22           +13       
+call       74           73           +1        
+check      15           41           -26       
+fold       83           64           +19       
+raise      15           30           -15       
+
+Temperature: direct
+------------------------------------------------------------
+Action     Predicted    Reference    Diff      
+------------------------------------------------------------
+all-in     2            0            +2        
+bet        19           22           -3        
+call       51           73           -22       
+check      38           41           -3        
+fold       116          64           +52       
+raise      4            30           -26       
+
+================================================================================
+4. ERROR PATTERN ANALYSIS
+================================================================================
+
+Temperature: 0.1
+------------------------------------------------------------
+Most common errors (Reference → Predicted):
+  call → fold           27 times
+  check → bet           24 times
+  fold → call           18 times
+  raise → call          17 times
+  check → call           9 times
+  raise → fold           8 times
+  call → raise           7 times
+  bet → call             5 times
+  fold → raise           3 times
+  check → fold           3 times
+
+Temperature: 0.3
+------------------------------------------------------------
+Most common errors (Reference → Predicted):
+  check → bet           27 times
+  call → fold           20 times
+  fold → call           17 times
+  raise → fold          12 times
+  raise → call          11 times
+  call → raise           7 times
+  check → call           6 times
+  fold → raise           3 times
+  call → all-in          3 times
+  bet → check            3 times
+
+Temperature: 0.5
+------------------------------------------------------------
+Most common errors (Reference → Predicted):
+  call → fold           30 times
+  check → bet           27 times
+  raise → fold          14 times
+  fold → call           13 times
+  raise → call          10 times
+  call → raise           6 times
+  check → call           6 times
+  call → all-in          5 times
+  bet → check            5 times
+  check → fold           4 times
+
+Temperature: 0.7
+------------------------------------------------------------
+Most common errors (Reference → Predicted):
+  call → fold           25 times
+  check → bet           23 times
+  fold → call           17 times
+  raise → fold          13 times
+  call → raise          11 times
+  check → fold           8 times
+  raise → call           7 times
+  bet → check            6 times
+  check → raise          4 times
+  fold → raise           3 times
+
+Temperature: 1.0
+------------------------------------------------------------
+Most common errors (Reference → Predicted):
+  call → fold           23 times
+  check → bet           22 times
+  fold → call           17 times
+  raise → call          14 times
+  raise → fold          10 times
+  call → raise           7 times
+  check → call           4 times
+  bet → check            4 times
+  call → all-in          3 times
+  check → fold           3 times
+
+Temperature: direct
+------------------------------------------------------------
+Most common errors (Reference → Predicted):
+  call → fold           36 times
+  raise → fold          17 times
+  bet → check           12 times
+  check → bet           11 times
+  raise → call          10 times
+  fold → call            7 times
+  check → fold           4 times
+  call → all-in          2 times
+  call → raise           2 times
+  bet → fold             2 times
+
+================================================================================
+5. STAGE-SPECIFIC INSIGHTS (Temperature 0.1)
+================================================================================
+
+PREFLOP
+------------------------------------------------------------
+Accuracy: 24/30 (80.0%)
+Most common predicted actions: fold(16), call(13), raise(1)
+Most common reference actions: fold(17), call(12), raise(1)
+
+FLOP
+------------------------------------------------------------
+Accuracy: 22/50 (44.0%)
+Most common predicted actions: call(33), fold(8), raise(5)
+Most common reference actions: call(24), raise(9), fold(9)
+
+TURN
+------------------------------------------------------------
+Accuracy: 25/75 (33.3%)
+Most common predicted actions: fold(28), call(27), bet(13)
+Most common reference actions: call(29), check(16), fold(16)
+
+RIVER
+------------------------------------------------------------
+Accuracy: 29/75 (38.7%)
+Most common predicted actions: fold(29), bet(22), call(14)
+Most common reference actions: fold(22), check(20), bet(14)
+
+================================================================================
+6. SUMMARY
+================================================================================
+
+Best performing temperature: direct (54.3% accuracy)
+
+Observations:
+- Total evaluations: 230
+- Poker stages covered: Preflop, Flop, Turn, River
+- Evaluation metrics: Correct (exact or within 50% bet size), Semi-correct (right action, wrong size),
+                      Incorrect (wrong action), Invalid (unparsable or contextually wrong)
+
+================================================================================
+END OF REPORT
+================================================================================

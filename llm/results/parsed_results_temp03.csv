@@ -1,0 +1,231 @@
+index,stage,decision,reference,result
+0,preflop,call,fold,incorrect
+20,preflop,call,call,correct
+40,preflop,call,fold,incorrect
+60,preflop,fold,fold,correct
+80,preflop,raise 6.5,raise 7.5,correct
+100,preflop,fold,fold,correct
+120,preflop,fold,fold,correct
+140,preflop,call,fold,incorrect
+160,preflop,fold,fold,correct
+180,preflop,fold,fold,correct
+200,preflop,fold,fold,correct
+220,preflop,fold,fold,correct
+240,preflop,call,call,correct
+260,preflop,fold,fold,correct
+280,preflop,fold,fold,correct
+300,preflop,fold,call,incorrect
+320,preflop,fold,call,incorrect
+340,preflop,fold,fold,correct
+360,preflop,fold,call,incorrect
+380,preflop,call,call,correct
+400,preflop,fold,fold,correct
+420,preflop,call,call,correct
+440,preflop,call,call,correct
+460,preflop,call,call,correct
+480,preflop,fold,fold,correct
+500,preflop,call,call,correct
+520,preflop,raise 2.5,fold,incorrect
+540,preflop,call,fold,incorrect
+560,preflop,fold,call,incorrect
+580,preflop,fold,call,incorrect
+600,flop,fold,call,incorrect
+620,flop,call,call,correct
+640,flop,call,check,invalid
+660,flop,call,call,correct
+680,flop,call,raise 21,incorrect
+700,flop,call,call,correct
+720,flop,fold,call,incorrect
+740,flop,fold,fold,correct
+760,flop,call,fold,incorrect
+780,flop,call,call,correct
+800,flop,raise 10.0,call,incorrect
+820,flop,call,call,correct
+840,flop,bet 3.0,bet 4,correct
+860,flop,fold,fold,correct
+880,flop,call,fold,incorrect
+900,flop,call,call,correct
+920,flop,call,call,correct
+940,flop,call,raise 41,incorrect
+960,flop,"raise x (sizing depends on the dynamics and stack sizes, a typical raise could be around 3-4 times the hj's bet, so around 6-8 chips)",bet 2,invalid
+980,flop,call,fold,incorrect
+1000,flop,call,call,correct
+1020,flop,raise 8.0,raise 10,correct
+1040,flop,fold,raise 22,incorrect
+1060,flop,call,raise 17,incorrect
+1080,flop,fold,raise 10,incorrect
+1100,flop,call,call,correct
+1120,flop,fold,fold,correct
+1140,flop,call,raise 11,incorrect
+1160,flop,bet 4.0,check,incorrect
+1180,flop,raise 6.5,call,incorrect
+1200,flop,bet 2.5,check,incorrect
+1220,flop,call,call,correct
+1240,flop,call,check,invalid
+1260,flop,bet 3.0,bet 4,correct
+1280,flop,call,call,correct
+1300,flop,fold,call,incorrect
+1320,flop,call,call,correct
+1340,flop,call,raise 10,incorrect
+1360,flop,call,call,correct
+1380,flop,raise x,call,invalid
+1400,flop,call,fold,incorrect
+1420,flop,call,call,correct
+1440,flop,call,call,correct
+1460,flop,raise 30.0,call,incorrect
+1480,flop,call,raise 16,incorrect
+1500,flop,call,call,correct
+1520,flop,call,fold,incorrect
+1540,flop,fold,fold,correct
+1560,flop,bet 3.0,check,incorrect
+1580,flop,call,call,correct
+1600,turn,fold,call,incorrect
+1620,turn,bet 8.0,bet 15,correct
+1640,turn,bet 20,check,incorrect
+1660,turn,call,fold,incorrect
+1680,turn,raise 30,call,incorrect
+1700,turn,bet 3.5 chips,check,incorrect
+1720,turn,call,raise 10,incorrect
+1740,turn,call,raise 33,incorrect
+1760,turn,fold,raise 74,incorrect
+1780,turn,bet 20.0,bet 20,correct
+1800,turn,bet 8 chips,check,incorrect
+1820,turn,call,raise 90,incorrect
+1840,turn,fold,fold,correct
+1860,turn,fold,fold,correct
+1880,turn,bet 30.0,check,incorrect
+1900,turn,fold,fold,correct
+1920,turn,fold,call,incorrect
+1940,turn,fold,fold,correct
+1960,turn,call,call,correct
+1980,turn,fold,fold,correct
+2000,turn,bet 8.0,check,incorrect
+2020,turn,bet 5.0 chips,check,incorrect
+2040,turn,bet 5.0,check,incorrect
+2060,turn,call,call,correct
+2080,turn,fold,call,incorrect
+2100,turn,bet 15,check,incorrect
+2120,turn,call,fold,incorrect
+2140,turn,bet 10.0,bet 18,correct
+2160,turn,fold,call,incorrect
+2180,turn,call,check,invalid
+2200,turn,fold,call,incorrect
+2220,turn,raise 40,raise 46,correct
+2240,turn,call,call,correct
+2260,turn,fold,fold,correct
+2280,turn,fold,call,incorrect
+2300,turn,call,call,correct
+2320,turn,raise all in,call,incorrect
+2340,turn,call,call,correct
+2360,turn,call,call,correct
+2380,turn,raise 20,fold,incorrect
+2400,turn,fold,call,incorrect
+2420,turn,fold,call,incorrect
+2440,turn,fold,fold,correct
+2460,turn,bet 15.0,bet 17,correct
+2480,turn,raise 15,call,incorrect
+2500,turn,bet 15 chips,check,incorrect
+2520,turn,fold,raise 38,incorrect
+2540,turn,call,call,correct
+2560,turn,call,call,correct
+2580,turn,all in,raise 90,correct
+2600,turn,call,call,correct
+2620,turn,fold,call,incorrect
+2640,turn,fold,fold,correct
+2660,turn,call,call,correct
+2680,turn,bet 3.0,check,incorrect
+2700,turn,call,check,invalid
+2720,turn,call,fold,incorrect
+2740,turn,call,call,correct
+2760,turn,fold,fold,correct
+2780,turn,fold,raise 86,incorrect
+2800,turn,bet 3.0,bet 3,correct
+2820,turn,raise 55,call,incorrect
+2840,turn,bet 25,check,incorrect
+2860,turn,call,fold,incorrect
+2880,turn,bet 3.0,check,incorrect
+2900,turn,raise 18,call,incorrect
+2920,turn,fold,call,incorrect
+2940,turn,call,call,correct
+2960,turn,fold,fold,correct
+2980,turn,bet 10,check,incorrect
+3000,turn,bet 8-10 chips,check,incorrect
+3020,turn,fold,fold,correct
+3040,turn,call,call,correct
+3060,turn,raise 40,raise 80,correct
+3080,turn,all in,call,incorrect
+3100,river,raise 17,check,invalid
+3120,river,call,raise 13,incorrect
+3140,river,check,check,correct
+3160,river,fold,fold,correct
+3180,river,check,bet 11,incorrect
+3200,river,bet 20,bet 23,correct
+3220,river,bet 20.0,check,incorrect
+3240,river,call,call,correct
+3260,river,fold,call,incorrect
+3280,river,check,bet 17,incorrect
+3300,river,all in,call,incorrect
+3320,river,bet 20,raise 62,invalid
+3340,river,call,call,correct
+3360,river,call,check,invalid
+3380,river,call,raise 10,incorrect
+3400,river,raise 88 chips,fold,incorrect
+3420,river,check,check,correct
+3440,river,fold,fold,correct
+3460,river,call,call,correct
+3480,river,call,fold,incorrect
+3500,river,fold,check,invalid
+3520,river,fold,raise 89,incorrect
+3540,river,fold,bet 23,invalid
+3560,river,bet 12 chips,check,incorrect
+3580,river,bet 12.0,check,incorrect
+3600,river,bet 8.0,check,incorrect
+3620,river,fold,fold,correct
+3640,river,bet 7.0 chips,check,incorrect
+3660,river,bet 3.0,check,incorrect
+3680,river,call,call,correct
+3700,river,fold,fold,correct
+3720,river,call,check,invalid
+3740,river,call,fold,incorrect
+3760,river,fold,raise 84,incorrect
+3780,river,fold,fold,correct
+3800,river,fold,raise 22,incorrect
+3820,river,fold,raise 25,incorrect
+3840,river,bet 20.0,bet 23,correct
+3860,river,fold,raise 81,incorrect
+3880,river,bet 5.0,bet 10,correct
+3900,river,fold,call,incorrect
+3920,river,bet 3-4 chips,bet 4,correct
+3940,river,fold,check,invalid
+3960,river,fold,fold,correct
+3980,river,fold,fold,correct
+4000,river,fold,fold,correct
+4020,river,fold,fold,correct
+4040,river,bet 4.0,check,incorrect
+4060,river,check,check,correct
+4080,river,call,bet 3,incorrect
+4100,river,fold,fold,correct
+4120,river,bet 30,check,incorrect
+4140,river,bet 10.0,bet 13,correct
+4160,river,fold,fold,correct
+4180,river,raise 70 chips,raise 91,correct
+4200,river,bet 25-35 chips,check,incorrect
+4220,river,fold,fold,correct
+4240,river,bet 8.5 chips,bet 10,correct
+4260,river,fold,check,invalid
+4280,river,fold,fold,correct
+4300,river,call,fold,incorrect
+4320,river,check,check,correct
+4340,river,call,fold,incorrect
+4360,river,check,bet 8,incorrect
+4380,river,bet 6.0,check,incorrect
+4400,river,fold,raise 89,incorrect
+4420,river,fold,fold,correct
+4440,river,fold,raise 92,incorrect
+4460,river,bet 20,bet 24,correct
+4480,river,fold,fold,correct
+4500,river,bet 10.0,bet 11,correct
+4520,river,bet 15.0,bet 20,correct
+4540,river,call,call,correct
+4560,river,fold,fold,correct
+4580,river,fold,fold,correct
